@@ -34,6 +34,10 @@ body {
   border: 1px solid black;
   margin: 0 10px;
 }
+.wrapper .content .row-picture {
+  height: 500px;
+  margin-top: 20px;
+}
 .wrapper .footer {
   position: relative;
   left: 0;
