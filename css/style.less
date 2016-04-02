@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  background-color: #f1f1f1;
 }
 
 .wrapper {
@@ -13,35 +14,33 @@ body {
   min-height: 100%;
 
   .header {
-    margin: 5px 0 0 0;
-    .navbar-default {
-      background-image: none !important;
-      border: none;
-      box-shadow: none;
-      -webkit-box-shadow: none;
 
-      .login-button {
-        background: #00aced;
-        color: white;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-      }
-    }
-
-    .navbar-default {
-      background-color: transparent !important;
-    }
-  }
-
-  .content {
-    padding-bottom: 90px;
-    min-height: 85vh;
-    border: 1px solid black;
     margin: 0 10px;
 
-    .row-picture {
-      height: 500px;
-      margin-top: 20px; }
+    nav {
+      background-color: transparent;
+      box-shadow: none;
+
+      ul a {
+        transition: background-color .3s;
+        font-size: 1rem;
+        color: black;
+        display: inline-block;
+        padding: 0 15px;
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .nav-wrapper {
+        .login-button {
+          background: #00aced;
+          color: white;
+        }
+      }
+    }
   }
 
   .footer {
@@ -50,6 +49,129 @@ body {
     bottom: 0;
     width: 100%;
     height: 80px;
+
+    footer {
+      //      background-color: #353535  ;
+    }
   }
 
+}
+
+@mobile: ~"only screen and (max-width: 719px)";
+@tablet: ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@desktop: ~"only screen and (min-width: 960px) and (max-width: 1440px)";
+@hdscreen: ~"only screen and (min-width: 1441px)";
+
+@media @desktop,@hdscreen {
+
+  .content {
+    padding-bottom: 90px;
+    min-height: 85vh;
+    margin: 0 10px;
+
+    .row {
+      min-height: 400px;
+      margin: 0;
+
+      .bar-label {
+        text-transform: uppercase;
+        color: black;
+        font-size: 12pt;
+        border-bottom: 2px solid #e93100;
+        font-weight: bold;
+      }
+
+      .left-image {
+        min-height: 400px;
+        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
+        background-size: cover;
+      }
+
+      .right-top-image {
+        min-height: 200px;
+        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
+        background-size: cover;
+      }
+
+      .right-bottom-image {
+        min-height: 200px;
+        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
+        background-size: cover;
+      }
+
+      .left-block {
+        border: 10px solid #f1f1f1;
+        border-left: none;
+        background-color: #ffffff;
+        padding: 20px 10px;
+
+        .left-block-items {
+          display: table;
+
+          .item-left, .item-right {
+            display: table-cell;
+          }
+
+          .item-left {
+            width: 80px;
+            height: 80px;
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
+
+          .item-right {
+            padding: 0;
+            width: 100%;
+            margin: 0 auto;
+
+            label {
+              text-transform: uppercase;
+              margin-left: 10px !important;
+              position: relative;
+              top: -33px;
+            }
+
+            p {
+              margin-left: 10px;
+              position: relative;
+              top: -33px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media @mobile, @tablet{
+  .content {
+    padding-bottom: 90px;
+    min-height: 85vh;
+    margin: 0 10px;
+
+    .row {
+      margin: 0;
+
+      .left-image {
+        height: 200px !important;
+        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
+        background-size: cover;
+      }
+
+      .right-top-image {
+        min-height: 100px;
+        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
+        background-size: cover;
+      }
+
+      .right-bottom-image {
+        min-height: 100px;
+        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
+        background-size: cover;
+      }
+    }
+  }
 }

@@ -7,51 +7,173 @@
     <!--BOOTSTRAP CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-
+    <!-- Materialized CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <!--CUSTOM CSS-->
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 </head>
 <body>
 
 <div class="wrapper">
 
     <div class="header">
-        <nav class="navbar navbar-default header-navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" height="66" width="122" alt="Joblisting">
-                    </a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Search People</a></li>
-                        <li><a href="#">Search Jobseekers</a></li>
-                        <li><a href="#">Search Resumes</a></li>
-                        <li><a href="#">Search Jobs</a></li>
-                        <li><a href="#">List Your Job</a></li>
-                        <li><a href="#">Register Now!</a></li>
-                        <li><a href="#" class="login-button"><span class="glyphicon glyphicon-lock"></span>&nbsp;Login</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">
+                    <img src="images/logo.png" height="66" width="122" alt="Joblisting">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Search People</a></li>
+                    <li><a href="#">Search Jobseekers</a></li>
+                    <li><a href="#">Search Resumes</a></li>
+                    <li><a href="#">Search Jobs</a></li>
+                    <li><a href="#">List Your Job</a></li>
+                    <li><a href="#">Register Now!</a></li>
+                    <li><a href="#" class="login-button"><span class="glyphicon glyphicon-lock"></span>&nbsp;Login</a>
+                    </li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#">Search People</a></li>
+                    <li><a href="#">Search Jobseekers</a></li>
+                    <li><a href="#">Search Resumes</a></li>
+                    <li><a href="#">Search Jobs</a></li>
+                    <li><a href="#">List Your Job</a></li>
+                    <li><a href="#">Register Now!</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-lock"></span>&nbsp;Login</a></li>
+                </ul>
             </div>
         </nav>
+        <!--<nav class="navbar navbar-default header-navigation ">-->
+        <!--<div class="container-fluid">-->
+        <!--<div class="navbar-header">-->
+        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+        <!--<span class="sr-only">Toggle navigation</span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--</button>-->
+        <!--<a class="navbar-brand" href="#">-->
+        <!--<img src="images/logo.png" height="66" width="122" alt="Joblisting">-->
+        <!--</a>-->
+        <!--</div>-->
+
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+        <!--<ul class="nav navbar-nav navbar-right">-->
+        <!--<li><a href="#">Search People</a></li>-->
+        <!--<li><a href="#">Search Jobseekers</a></li>-->
+        <!--<li><a href="#">Search Resumes</a></li>-->
+        <!--<li><a href="#">Search Jobs</a></li>-->
+        <!--<li><a href="#">List Your Job</a></li>-->
+        <!--<li><a href="#">Register Now!</a></li>-->
+        <!--<li><a href="#" class="login-button"><span class="glyphicon glyphicon-lock"></span>&nbsp;Login</a></li>-->
+        <!--</ul>-->
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+        <!--</div>-->
+        <!--</nav>-->
     </div>
 
     <div class="content">
+        <div class="row">
+            <div class="col-lg-13 col-xs-24 col-sm-24 col-md-13 left-image">
+                <p>Entertainment</p>
+            </div>
+            <div class="col-lg-11 col-xs-12 col-sm-12 col-md-11 right-top-image">1</div>
+            <div class="col-lg-11 col-xs-12 col-sm-12 col-md-11 right-bottom-image">2</div>
+        </div>
 
+        <div class="row">
+            <div class="col-xs-24 col-sm-24 col-md-24 col-lg-6 left-block">
+                <p class="bar-label">Connections</p>
+
+                <div class="left-block-items">
+                    <div style="display: table-row">
+                        <div class="item-left">
+                            <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-7398589-group-of-teenagers-hanging-out-m-80x80.jpg">
+                        </div>
+                        <div class="item-right">
+                            <label>entertainment</label>
+
+                            <p>Group rescued from sea after boat sinks off Guernsey</p>
+                        </div>
+                    </div>
+
+                    <div style="display: table-row">
+                        <div class="item-left">
+                            <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-3075845-passion-dance-couple-m-80x80.jpg">
+                        </div>
+                        <div class="item-right">
+                            <label>sport</label>
+
+                            <p>Breakdancing meets Bach: Get down with The Flying Steps</p>
+                        </div>
+                    </div>
+
+                    <div style="display: table-row">
+                        <div class="item-left">
+                            <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-4621694-guitar-s-80x80.jpg">
+                        </div>
+                        <div class="item-right">
+                            <label>entertainment</label>
+
+                            <p>Hear Kurt Cobain’s Sparse, Poignant ‘Sappy’ Demo</p>
+                        </div>
+                    </div>
+                    <div style="display: table-row">
+                        <div class="item-left">
+                            <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-2279645-woman-in-hat-s-80x80.jpg">
+                        </div>
+                        <div class="item-right">
+                            <label>fashion</label>
+
+                            <p>Summer Dresses This Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-24 col-sm-24 col-md-24 col-lg-12" style="border: 1px solid #000000">
+                <div style="border: 1px solid #000000; display: table-cell;">
+                    <p> kek </p>
+                    <p> kek </p>
+                    <p> kek </p>
+                    <p> kek </p>
+                </div>
+            </div>
+            <div class="col-xs-24 col-sm-24 col-md-24 col-lg-6" style="border: 1px solid #000000">Right bar</div>
+        </div>
     </div>
 
     <div class="footer">
-        footer
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                            content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
+        </footer>
     </div>
 
 </div>
@@ -59,5 +181,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <!--BOOTSTRAP JS-->
 <script src="js/bootstrap.min.js"></script>
+<!-- Materialized JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script>
+    $(".button-collapse").sideNav();
+</script>
 </body>
 </html>
