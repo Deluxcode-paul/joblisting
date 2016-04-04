@@ -70,15 +70,17 @@ body {
     margin: 0 10px;
 
     .row {
-      min-height: 400px;
+      //min-height: 400px;
       margin: 0;
-      border: 1px solid #000000;
-
       #leftCol {
         padding: 0;
       }
 
-      .affix-top,.affix, .affix-bottom{
+      #rightCol {
+        padding: 0;
+      }
+
+      .affix-top, .affix, .affix-bottom {
         position: static;
       }
 
@@ -89,7 +91,7 @@ body {
       }
 
       #sidebar.affix-bottom {
-        position: static;
+        position: fixed;
         width: 25vw;
         padding: 20px;
       }
@@ -99,6 +101,7 @@ body {
         top: 0;
         margin: 0 auto;
         padding: 20px;
+        bottom: 250px;
       }
 
       .bar-label {
@@ -127,16 +130,43 @@ body {
         background-size: cover;
       }
 
+      .carousel {
+        height: 200px !important;
+        left: 15px;
+        //width: 103.6%;
+      }
+
       .right-top-image {
         min-height: 200px;
-        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
-        background-size: cover;
+        //background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
+        //background-size: cover;
       }
 
       .right-bottom-image {
         min-height: 200px;
-        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
-        background-size: cover;
+
+        //background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
+        //background-size: cover;
+      }
+
+      .carousel-control {
+        width: 8%;
+      }
+
+      .carousel-inner {
+        .item {
+          img {
+            width: 100%;
+            margin: auto;
+          }
+
+          a {
+            img {
+              width: 100%;
+              margin: auto;
+            }
+          }
+        }
       }
 
       .left-block {
@@ -145,7 +175,44 @@ body {
         background-color: #ffffff;
         padding: 20px 10px;
 
+        .may-know-tbl {
+          display: table;
+          width: 100%;
+
+          .tbl-row {
+            display: table-row;
+
+            .tbl-cell {
+              display: table-cell;
+              width: 25%;
+              padding: 10px 0;
+
+              img {
+                width: 50%;
+              }
+            }
+
+          }
+        }
+
         .social-block {
+          max-height: 3vh !important;
+          border: none;
+          min-height: 0;
+        }
+
+        .import-contacts {
+          max-height: 3vh !important;
+          border: none;
+          min-height: 0;
+
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .invite-form {
           max-height: 3vh !important;
           border: none;
           min-height: 0;
@@ -190,9 +257,39 @@ body {
 
       .middle-block {
         border: 10px solid #f1f1f1;
-//        border-left: none;
+        //        border-left: none;
         background-color: #ffffff;
         padding: 20px 10px;
+
+        .middle-block-row {
+          height: 40vh !important;
+          background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
+          background-size: cover;
+          margin-bottom: 5%;
+
+          label {
+            position: relative;
+            top: 25vh !important;
+            left: 30px;
+            background-color: orangered;
+            color: white;
+            text-transform: uppercase;
+            padding: 5px 10px 5px 10px;
+          }
+
+          h4 {
+            position: relative;
+            top: 25vh;
+            left: 30px;
+            color: white;
+            word-wrap: break-word;
+            text-shadow: grey;
+          }
+        }
+
+        .secondary-row {
+          margin-top: 5%;
+        }
       }
 
       .right-block {
@@ -200,19 +297,89 @@ body {
         border-right: none;
         background-color: #ffffff;
         padding: 20px 10px;
+
+        .sponsored {
+          min-height: 3vh !important;
+
+          .sponsored-label {
+            font-size: 10pt;
+            font-weight: bold;
+          }
+          img {
+            width: 85%;
+          }
+        }
+
+        #right-label {
+          margin-top: 20px !important;
+        }
+
+        .sponsored-job {
+          min-height: 3vh !important;
+
+          .inner-div-1 {
+            display: table;
+            width: 100%;
+
+            .inner-div-2 {
+              display: table-cell;
+              width: 100%;
+            }
+            #left-cell {
+              display: table-cell;
+              width: 10vw;
+
+              img {
+                width: 100px;
+                height: 100px;
+              }
+            }
+
+            #right-cell {
+              display: table-cell;
+              width: 90vw;
+
+              .job-title {
+                font-weight: bold;
+                position: relative;
+                top: -33px;
+                text-align: center;
+              }
+
+              .job-descr {
+                position: relative;
+                top: -33px;
+                padding-left: 5px;
+                white-space: nowrap;
+                color: #1b6d85;
+                font-size: 9pt;
+              }
+
+              .job-info {
+                position: relative;
+                top: -33px;
+                padding-left: 5px;
+                white-space: nowrap;
+                color: #1b6d85;
+                font-size: 7pt;
+              }
+            }
+          }
+        }
       }
     }
   }
 
 }
 
-@media @mobile, @tablet{
+@media @mobile, @tablet {
   .content {
     padding-bottom: 90px;
     min-height: 85vh;
     margin: 0 10px;
 
     .row {
+      min-height: 400px;
       margin: 0;
 
       .left-image {
@@ -221,16 +388,191 @@ body {
         background-size: cover;
       }
 
+      .carousel {
+        height: 60px !important;
+        //width: 103.6%;
+      }
+
+
       .right-top-image {
         min-height: 100px;
-        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
-        background-size: cover;
+        //background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
+        //background-size: cover;
       }
 
       .right-bottom-image {
         min-height: 100px;
-        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
-        background-size: cover;
+        //background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
+        //background-size: cover;
+      }
+
+      #leftCol {
+        padding: 0;
+      }
+
+      .bar-label {
+        text-transform: uppercase;
+        color: black;
+        font-size: 12pt;
+        border-bottom: 2px solid #e93100;
+        font-weight: bold;
+      }
+
+      .sub-label {
+        color: black;
+        font-size: 12pt;
+        border-bottom: 2px solid #e93100;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      #second-bar-label {
+        margin-top: 20px;
+      }
+
+      .left-block {
+        //border: 10px solid #f1f1f1;
+        border-left: none;
+        background-color: #ffffff;
+
+        .may-know-tbl {
+          display: table;
+          width: 100%;
+
+          .tbl-row {
+            display: table-row;
+
+            .tbl-cell {
+              display: table-cell;
+              width: 25%;
+              padding: 5% 0;
+
+              img {
+                width: 50%;
+                //height: 70px;
+              }
+            }
+
+          }
+        }
+
+        .social-block {
+          max-height: 3vh !important;
+          border: none;
+          min-height: 0;
+        }
+
+        .import-contacts {
+          max-height: 3vh !important;
+          border: none;
+          min-height: 0;
+
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .invite-form {
+          max-height: 3vh !important;
+          border: none;
+          min-height: 0;
+        }
+
+        .left-block-items {
+          display: table;
+
+          .item-left, .item-right {
+            display: table-cell;
+          }
+
+          .item-left {
+            width: 80px;
+            height: 80px;
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
+
+          .item-right {
+            padding: 0;
+            width: 100%;
+            margin: 0 auto;
+
+            label {
+              text-transform: uppercase;
+              margin-left: 10px !important;
+              position: relative;
+              top: -33px;
+            }
+
+            p {
+              margin-left: 10px;
+              position: relative;
+              top: -33px;
+            }
+          }
+        }
+      }
+
+      .middle-block {
+        border: 10px solid #f1f1f1;
+        //        border-left: none;
+        background-color: #ffffff;
+        padding: 20px 10px;
+
+        .middle-block-row {
+          height: 40vh !important;
+          background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
+          background-size: cover;
+          margin-bottom: 5%;
+
+          label {
+            position: relative;
+            top: 25vh !important;
+            left: 30px;
+            background-color: orangered;
+            color: white;
+            text-transform: uppercase;
+            padding: 5px 10px 5px 10px;
+          }
+
+          h4 {
+            position: relative;
+            top: 25vh;
+            left: 30px;
+            color: white;
+            word-wrap: break-word;
+            text-shadow: grey;
+          }
+        }
+
+        .secondary-row {
+          margin-top: 5%;
+        }
+      }
+
+      .right-block {
+        margin-top: 10px;
+        background-color: #ffffff;
+        padding: 20px 10px;
+
+        .sponsored {
+          min-height: 3vh !important;
+
+          .sponsored-label {
+            font-size: 10pt;
+            font-weight: bold;
+          }
+          img {
+            width: 85%;
+          }
+        }
+
+        #right-label {
+          margin-top: 20px !important;
+        }
       }
     }
   }

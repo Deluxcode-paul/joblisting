@@ -47,11 +47,12 @@ body {
     margin: 0 10px;
   }
   .content .row {
-    min-height: 400px;
     margin: 0;
-    border: 1px solid #000000;
   }
   .content .row #leftCol {
+    padding: 0;
+  }
+  .content .row #rightCol {
     padding: 0;
   }
   .content .row .affix-top,
@@ -65,7 +66,7 @@ body {
     padding: 20px;
   }
   .content .row #sidebar.affix-bottom {
-    position: static;
+    position: fixed;
     width: 25vw;
     padding: 20px;
   }
@@ -74,6 +75,7 @@ body {
     top: 0;
     margin: 0 auto;
     padding: 20px;
+    bottom: 250px;
   }
   .content .row .bar-label {
     text-transform: uppercase;
@@ -97,15 +99,26 @@ body {
     background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
     background-size: cover;
   }
+  .content .row .carousel {
+    height: 200px !important;
+    left: 15px;
+  }
   .content .row .right-top-image {
     min-height: 200px;
-    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
-    background-size: cover;
   }
   .content .row .right-bottom-image {
     min-height: 200px;
-    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
-    background-size: cover;
+  }
+  .content .row .carousel-control {
+    width: 8%;
+  }
+  .content .row .carousel-inner .item img {
+    width: 100%;
+    margin: auto;
+  }
+  .content .row .carousel-inner .item a img {
+    width: 100%;
+    margin: auto;
   }
   .content .row .left-block {
     border: 10px solid #f1f1f1;
@@ -113,7 +126,36 @@ body {
     background-color: #ffffff;
     padding: 20px 10px;
   }
+  .content .row .left-block .may-know-tbl {
+    display: table;
+    width: 100%;
+  }
+  .content .row .left-block .may-know-tbl .tbl-row {
+    display: table-row;
+  }
+  .content .row .left-block .may-know-tbl .tbl-row .tbl-cell {
+    display: table-cell;
+    width: 25%;
+    padding: 10px 0;
+  }
+  .content .row .left-block .may-know-tbl .tbl-row .tbl-cell img {
+    width: 50%;
+  }
   .content .row .left-block .social-block {
+    max-height: 3vh !important;
+    border: none;
+    min-height: 0;
+  }
+  .content .row .left-block .import-contacts {
+    max-height: 3vh !important;
+    border: none;
+    min-height: 0;
+  }
+  .content .row .left-block .import-contacts img {
+    width: 32px;
+    height: 32px;
+  }
+  .content .row .left-block .invite-form {
     max-height: 3vh !important;
     border: none;
     min-height: 0;
@@ -154,11 +196,95 @@ body {
     background-color: #ffffff;
     padding: 20px 10px;
   }
+  .content .row .middle-block .middle-block-row {
+    height: 40vh !important;
+    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
+    background-size: cover;
+    margin-bottom: 5%;
+  }
+  .content .row .middle-block .middle-block-row label {
+    position: relative;
+    top: 25vh !important;
+    left: 30px;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 10px 5px 10px;
+  }
+  .content .row .middle-block .middle-block-row h4 {
+    position: relative;
+    top: 25vh;
+    left: 30px;
+    color: white;
+    word-wrap: break-word;
+    text-shadow: grey;
+  }
+  .content .row .middle-block .secondary-row {
+    margin-top: 5%;
+  }
   .content .row .right-block {
     border: 10px solid #f1f1f1;
     border-right: none;
     background-color: #ffffff;
     padding: 20px 10px;
+  }
+  .content .row .right-block .sponsored {
+    min-height: 3vh !important;
+  }
+  .content .row .right-block .sponsored .sponsored-label {
+    font-size: 10pt;
+    font-weight: bold;
+  }
+  .content .row .right-block .sponsored img {
+    width: 85%;
+  }
+  .content .row .right-block #right-label {
+    margin-top: 20px !important;
+  }
+  .content .row .right-block .sponsored-job {
+    min-height: 3vh !important;
+  }
+  .content .row .right-block .sponsored-job .inner-div-1 {
+    display: table;
+    width: 100%;
+  }
+  .content .row .right-block .sponsored-job .inner-div-1 .inner-div-2 {
+    display: table-cell;
+    width: 100%;
+  }
+  .content .row .right-block .sponsored-job .inner-div-1 #left-cell {
+    display: table-cell;
+    width: 10vw;
+  }
+  .content .row .right-block .sponsored-job .inner-div-1 #left-cell img {
+    width: 100px;
+    height: 100px;
+  }
+  .content .row .right-block .sponsored-job .inner-div-1 #right-cell {
+    display: table-cell;
+    width: 90vw;
+  }
+  .content .row .right-block .sponsored-job .inner-div-1 #right-cell .job-title {
+    font-weight: bold;
+    position: relative;
+    top: -33px;
+    text-align: center;
+  }
+  .content .row .right-block .sponsored-job .inner-div-1 #right-cell .job-descr {
+    position: relative;
+    top: -33px;
+    padding-left: 5px;
+    white-space: nowrap;
+    color: #1b6d85;
+    font-size: 9pt;
+  }
+  .content .row .right-block .sponsored-job .inner-div-1 #right-cell .job-info {
+    position: relative;
+    top: -33px;
+    padding-left: 5px;
+    white-space: nowrap;
+    color: #1b6d85;
+    font-size: 7pt;
   }
 }
 @media only screen and (max-width: 719px), only screen and (min-width: 720px) and (max-width: 959px) {
@@ -168,6 +294,7 @@ body {
     margin: 0 10px;
   }
   .content .row {
+    min-height: 400px;
     margin: 0;
   }
   .content .row .left-image {
@@ -175,14 +302,151 @@ body {
     background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
     background-size: cover;
   }
+  .content .row .carousel {
+    height: 60px !important;
+  }
   .content .row .right-top-image {
     min-height: 100px;
-    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
-    background-size: cover;
   }
   .content .row .right-bottom-image {
     min-height: 100px;
-    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
+  }
+  .content .row #leftCol {
+    padding: 0;
+  }
+  .content .row .bar-label {
+    text-transform: uppercase;
+    color: black;
+    font-size: 12pt;
+    border-bottom: 2px solid #e93100;
+    font-weight: bold;
+  }
+  .content .row .sub-label {
+    color: black;
+    font-size: 12pt;
+    border-bottom: 2px solid #e93100;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .content .row #second-bar-label {
+    margin-top: 20px;
+  }
+  .content .row .left-block {
+    border-left: none;
+    background-color: #ffffff;
+  }
+  .content .row .left-block .may-know-tbl {
+    display: table;
+    width: 100%;
+  }
+  .content .row .left-block .may-know-tbl .tbl-row {
+    display: table-row;
+  }
+  .content .row .left-block .may-know-tbl .tbl-row .tbl-cell {
+    display: table-cell;
+    width: 25%;
+    padding: 5% 0;
+  }
+  .content .row .left-block .may-know-tbl .tbl-row .tbl-cell img {
+    width: 50%;
+  }
+  .content .row .left-block .social-block {
+    max-height: 3vh !important;
+    border: none;
+    min-height: 0;
+  }
+  .content .row .left-block .import-contacts {
+    max-height: 3vh !important;
+    border: none;
+    min-height: 0;
+  }
+  .content .row .left-block .import-contacts img {
+    width: 32px;
+    height: 32px;
+  }
+  .content .row .left-block .invite-form {
+    max-height: 3vh !important;
+    border: none;
+    min-height: 0;
+  }
+  .content .row .left-block .left-block-items {
+    display: table;
+  }
+  .content .row .left-block .left-block-items .item-left,
+  .content .row .left-block .left-block-items .item-right {
+    display: table-cell;
+  }
+  .content .row .left-block .left-block-items .item-left {
+    width: 80px;
+    height: 80px;
+  }
+  .content .row .left-block .left-block-items .item-left img {
+    width: 80px;
+    height: 80px;
+  }
+  .content .row .left-block .left-block-items .item-right {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .content .row .left-block .left-block-items .item-right label {
+    text-transform: uppercase;
+    margin-left: 10px !important;
+    position: relative;
+    top: -33px;
+  }
+  .content .row .left-block .left-block-items .item-right p {
+    margin-left: 10px;
+    position: relative;
+    top: -33px;
+  }
+  .content .row .middle-block {
+    border: 10px solid #f1f1f1;
+    background-color: #ffffff;
+    padding: 20px 10px;
+  }
+  .content .row .middle-block .middle-block-row {
+    height: 40vh !important;
+    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
     background-size: cover;
+    margin-bottom: 5%;
+  }
+  .content .row .middle-block .middle-block-row label {
+    position: relative;
+    top: 25vh !important;
+    left: 30px;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 10px 5px 10px;
+  }
+  .content .row .middle-block .middle-block-row h4 {
+    position: relative;
+    top: 25vh;
+    left: 30px;
+    color: white;
+    word-wrap: break-word;
+    text-shadow: grey;
+  }
+  .content .row .middle-block .secondary-row {
+    margin-top: 5%;
+  }
+  .content .row .right-block {
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 20px 10px;
+  }
+  .content .row .right-block .sponsored {
+    min-height: 3vh !important;
+  }
+  .content .row .right-block .sponsored .sponsored-label {
+    font-size: 10pt;
+    font-weight: bold;
+  }
+  .content .row .right-block .sponsored img {
+    width: 85%;
+  }
+  .content .row .right-block #right-label {
+    margin-top: 20px !important;
   }
 }
