@@ -66,12 +66,40 @@ body {
 
   .content {
     padding-bottom: 90px;
-    min-height: 85vh;
+    min-height: 70vh;
     margin: 0 10px;
 
     .row {
       min-height: 400px;
       margin: 0;
+      border: 1px solid #000000;
+
+      #leftCol {
+        padding: 0;
+      }
+
+      .affix-top,.affix, .affix-bottom{
+        position: static;
+      }
+
+      #sidebar.affix-top {
+        position: static;
+        width: 25vw;
+        padding: 20px;
+      }
+
+      #sidebar.affix-bottom {
+        position: static;
+        width: 25vw;
+        padding: 20px;
+      }
+
+      #sidebar.affix {
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
       .bar-label {
         text-transform: uppercase;
@@ -79,6 +107,18 @@ body {
         font-size: 12pt;
         border-bottom: 2px solid #e93100;
         font-weight: bold;
+      }
+
+      .sub-label {
+        color: black;
+        font-size: 12pt;
+        border-bottom: 2px solid #e93100;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      #second-bar-label {
+        margin-top: 20px;
       }
 
       .left-image {
@@ -104,6 +144,12 @@ body {
         border-left: none;
         background-color: #ffffff;
         padding: 20px 10px;
+
+        .social-block {
+          max-height: 3vh !important;
+          border: none;
+          min-height: 0;
+        }
 
         .left-block-items {
           display: table;
@@ -140,6 +186,20 @@ body {
             }
           }
         }
+      }
+
+      .middle-block {
+        border: 10px solid #f1f1f1;
+//        border-left: none;
+        background-color: #ffffff;
+        padding: 20px 10px;
+      }
+
+      .right-block {
+        border: 10px solid #f1f1f1;
+        border-right: none;
+        background-color: #ffffff;
+        padding: 20px 10px;
       }
     }
   }

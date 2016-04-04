@@ -43,12 +43,37 @@ body {
 @media only screen and (min-width: 960px) and (max-width: 1440px), only screen and (min-width: 1441px) {
   .content {
     padding-bottom: 90px;
-    min-height: 85vh;
+    min-height: 70vh;
     margin: 0 10px;
   }
   .content .row {
     min-height: 400px;
     margin: 0;
+    border: 1px solid #000000;
+  }
+  .content .row #leftCol {
+    padding: 0;
+  }
+  .content .row .affix-top,
+  .content .row .affix,
+  .content .row .affix-bottom {
+    position: static;
+  }
+  .content .row #sidebar.affix-top {
+    position: static;
+    width: 25vw;
+    padding: 20px;
+  }
+  .content .row #sidebar.affix-bottom {
+    position: static;
+    width: 25vw;
+    padding: 20px;
+  }
+  .content .row #sidebar.affix {
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    padding: 20px;
   }
   .content .row .bar-label {
     text-transform: uppercase;
@@ -56,6 +81,16 @@ body {
     font-size: 12pt;
     border-bottom: 2px solid #e93100;
     font-weight: bold;
+  }
+  .content .row .sub-label {
+    color: black;
+    font-size: 12pt;
+    border-bottom: 2px solid #e93100;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .content .row #second-bar-label {
+    margin-top: 20px;
   }
   .content .row .left-image {
     min-height: 400px;
@@ -77,6 +112,11 @@ body {
     border-left: none;
     background-color: #ffffff;
     padding: 20px 10px;
+  }
+  .content .row .left-block .social-block {
+    max-height: 3vh !important;
+    border: none;
+    min-height: 0;
   }
   .content .row .left-block .left-block-items {
     display: table;
@@ -108,6 +148,17 @@ body {
     margin-left: 10px;
     position: relative;
     top: -33px;
+  }
+  .content .row .middle-block {
+    border: 10px solid #f1f1f1;
+    background-color: #ffffff;
+    padding: 20px 10px;
+  }
+  .content .row .right-block {
+    border: 10px solid #f1f1f1;
+    border-right: none;
+    background-color: #ffffff;
+    padding: 20px 10px;
   }
 }
 @media only screen and (max-width: 719px), only screen and (min-width: 720px) and (max-width: 959px) {
