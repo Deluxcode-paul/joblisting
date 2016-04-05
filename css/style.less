@@ -70,13 +70,9 @@ body {
     margin: 0 10px;
 
     .row {
-      //min-height: 400px;
       margin: 0;
-      #leftCol {
-        padding: 0;
-      }
 
-      #rightCol {
+      #leftCol {
         padding: 0;
       }
 
@@ -101,7 +97,8 @@ body {
         top: 0;
         margin: 0 auto;
         padding: 20px;
-        bottom: 250px;
+        bottom: 75px;
+        background-color: #ffffff;
       }
 
       .bar-label {
@@ -128,6 +125,25 @@ body {
         min-height: 400px;
         background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
         background-size: cover;
+
+        .avatar {
+          border: 1px solid grey;
+          background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
+          background-position: 150px 1px;
+          background-size: 200%;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          position: relative;
+          top: 220px;
+        }
+
+        .text-container {
+          position: relative;
+          top: 110px;
+          left: 150px;
+          color: #ffffff;
+        }
       }
 
       .carousel {
@@ -138,15 +154,10 @@ body {
 
       .right-top-image {
         min-height: 200px;
-        //background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
-        //background-size: cover;
       }
 
       .right-bottom-image {
         min-height: 200px;
-
-        //background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
-        //background-size: cover;
       }
 
       .carousel-control {
@@ -155,6 +166,7 @@ body {
 
       .carousel-inner {
         .item {
+
           img {
             width: 100%;
             margin: auto;
@@ -174,6 +186,11 @@ body {
         border-left: none;
         background-color: #ffffff;
         padding: 20px 10px;
+
+        .more-con {
+          white-space: nowrap;
+          font-weight: bold;
+        }
 
         .may-know-tbl {
           display: table;
@@ -239,6 +256,19 @@ body {
             width: 100%;
             margin: 0 auto;
 
+            .icons {
+              background-color: rgb(219, 219, 219);
+              position: relative;
+              top: -44px;
+              width: 90%;
+              left: 10px;
+
+              .num {
+                color: grey;
+                padding-left: 10px;
+              }
+            }
+
             label {
               text-transform: uppercase;
               margin-left: 10px !important;
@@ -249,7 +279,7 @@ body {
             p {
               margin-left: 10px;
               position: relative;
-              top: -33px;
+              top: -35px;
             }
           }
         }
@@ -271,13 +301,13 @@ body {
             position: relative;
             top: 25vh !important;
             left: 30px;
-            background-color: orangered;
+            background-color: transparent;
             color: white;
             text-transform: uppercase;
             padding: 5px 10px 5px 10px;
           }
 
-          h4 {
+          h5 {
             position: relative;
             top: 25vh;
             left: 30px;
@@ -369,7 +399,6 @@ body {
       }
     }
   }
-
 }
 
 @media @mobile, @tablet {
@@ -390,23 +419,21 @@ body {
 
       .carousel {
         height: 60px !important;
-        //width: 103.6%;
       }
-
 
       .right-top-image {
         min-height: 100px;
-        //background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-8966066-group-of-casual-business-people-having-a-meeting-about-social-co-m-1280x500.jpg");
-        //background-size: cover;
       }
 
       .right-bottom-image {
         min-height: 100px;
-        //background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-7398595-group-of-teenagers-hanging-out-m-1280x500.jpg");
-        //background-size: cover;
       }
 
       #leftCol {
+        padding: 0;
+      }
+
+      #rightCol {
         padding: 0;
       }
 
@@ -434,6 +461,14 @@ body {
         //border: 10px solid #f1f1f1;
         border-left: none;
         background-color: #ffffff;
+
+        .invite-btn {
+          visibility: hidden;
+        }
+
+        .invite-btn {
+          visibility: hidden;
+        }
 
         .may-know-tbl {
           display: table;
@@ -532,7 +567,7 @@ body {
             position: relative;
             top: 25vh !important;
             left: 30px;
-            background-color: orangered;
+            background-color: transparent;
             color: white;
             text-transform: uppercase;
             padding: 5px 10px 5px 10px;

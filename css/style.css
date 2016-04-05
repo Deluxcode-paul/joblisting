@@ -52,9 +52,6 @@ body {
   .content .row #leftCol {
     padding: 0;
   }
-  .content .row #rightCol {
-    padding: 0;
-  }
   .content .row .affix-top,
   .content .row .affix,
   .content .row .affix-bottom {
@@ -75,7 +72,8 @@ body {
     top: 0;
     margin: 0 auto;
     padding: 20px;
-    bottom: 250px;
+    bottom: 75px;
+    background-color: #ffffff;
   }
   .content .row .bar-label {
     text-transform: uppercase;
@@ -98,6 +96,23 @@ body {
     min-height: 400px;
     background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
     background-size: cover;
+  }
+  .content .row .left-image .avatar {
+    border: 1px solid grey;
+    background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
+    background-position: 150px 1px;
+    background-size: 200%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: 220px;
+  }
+  .content .row .left-image .text-container {
+    position: relative;
+    top: 110px;
+    left: 150px;
+    color: #ffffff;
   }
   .content .row .carousel {
     height: 200px !important;
@@ -125,6 +140,10 @@ body {
     border-left: none;
     background-color: #ffffff;
     padding: 20px 10px;
+  }
+  .content .row .left-block .more-con {
+    white-space: nowrap;
+    font-weight: bold;
   }
   .content .row .left-block .may-know-tbl {
     display: table;
@@ -180,6 +199,17 @@ body {
     width: 100%;
     margin: 0 auto;
   }
+  .content .row .left-block .left-block-items .item-right .icons {
+    background-color: #dbdbdb;
+    position: relative;
+    top: -44px;
+    width: 90%;
+    left: 10px;
+  }
+  .content .row .left-block .left-block-items .item-right .icons .num {
+    color: grey;
+    padding-left: 10px;
+  }
   .content .row .left-block .left-block-items .item-right label {
     text-transform: uppercase;
     margin-left: 10px !important;
@@ -189,7 +219,7 @@ body {
   .content .row .left-block .left-block-items .item-right p {
     margin-left: 10px;
     position: relative;
-    top: -33px;
+    top: -35px;
   }
   .content .row .middle-block {
     border: 10px solid #f1f1f1;
@@ -206,12 +236,12 @@ body {
     position: relative;
     top: 25vh !important;
     left: 30px;
-    background-color: orangered;
+    background-color: transparent;
     color: white;
     text-transform: uppercase;
     padding: 5px 10px 5px 10px;
   }
-  .content .row .middle-block .middle-block-row h4 {
+  .content .row .middle-block .middle-block-row h5 {
     position: relative;
     top: 25vh;
     left: 30px;
@@ -314,6 +344,9 @@ body {
   .content .row #leftCol {
     padding: 0;
   }
+  .content .row #rightCol {
+    padding: 0;
+  }
   .content .row .bar-label {
     text-transform: uppercase;
     color: black;
@@ -334,6 +367,12 @@ body {
   .content .row .left-block {
     border-left: none;
     background-color: #ffffff;
+  }
+  .content .row .left-block .invite-btn {
+    visibility: hidden;
+  }
+  .content .row .left-block .invite-btn {
+    visibility: hidden;
   }
   .content .row .left-block .may-know-tbl {
     display: table;
@@ -415,7 +454,7 @@ body {
     position: relative;
     top: 25vh !important;
     left: 30px;
-    background-color: orangered;
+    background-color: transparent;
     color: white;
     text-transform: uppercase;
     padding: 5px 10px 5px 10px;
