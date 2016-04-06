@@ -64,10 +64,42 @@ body {
 
 @media @desktop,@hdscreen {
 
+  .header {
+
+    margin: 0 10px;
+    padding: 0 100px;
+
+    .hide-on-med-and-down {
+      a:hover {
+        background-color: transparent !important;
+        color: #00aced !important;
+      }
+
+      .login-button:hover {
+        background-color: #00aced !important;
+        color: white !important;
+      }
+    }
+  }
+
+  .footer {
+    ul li {
+      display: inline;
+      text-align: center;
+      a {
+        color: black;
+        padding-left: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+
   .content {
     padding-bottom: 90px;
     min-height: 70vh;
     margin: 0 10px;
+    padding-left: 100px;
+    padding-right: 100px;
 
     .row {
       margin: 0;
@@ -83,21 +115,22 @@ body {
       #sidebar.affix-top {
         position: static;
         width: 25vw;
-        padding: 20px;
+        padding: 20px 50px;
       }
 
       #sidebar.affix-bottom {
         position: fixed;
         width: 25vw;
-        padding: 20px;
+        padding: 20px 50px;
+
       }
 
       #sidebar.affix {
         position: fixed;
         top: 0;
         margin: 0 auto;
-        padding: 20px;
-        bottom: 75px;
+        padding: 20px 50px;
+        bottom: 205px;
         background-color: #ffffff;
       }
 
@@ -129,19 +162,19 @@ body {
         .avatar {
           border: 1px solid grey;
           background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
-          background-position: 150px 1px;
-          background-size: 200%;
-          width: 120px;
-          height: 120px;
+          background-position: 260px 1px;
+          background-size: 190%;
+          width: 200px;
+          height: 200px;
           border-radius: 50%;
           position: relative;
-          top: 220px;
+          top: 150px;
         }
 
         .text-container {
           position: relative;
-          top: 110px;
-          left: 150px;
+          top: 10px;
+          left: 250px;
           color: #ffffff;
         }
       }
@@ -185,11 +218,15 @@ body {
         border: 10px solid #f1f1f1;
         border-left: none;
         background-color: #ffffff;
-        padding: 20px 10px;
+        padding: 0 50px;
 
         .more-con {
           white-space: nowrap;
           font-weight: bold;
+
+          a {
+            color: black;
+          }
         }
 
         .may-know-tbl {
@@ -274,6 +311,9 @@ body {
               margin-left: 10px !important;
               position: relative;
               top: -33px;
+              a {
+                color: grey;
+              }
             }
 
             p {
@@ -289,7 +329,47 @@ body {
         border: 10px solid #f1f1f1;
         //        border-left: none;
         background-color: #ffffff;
-        padding: 20px 10px;
+        padding: 10px 10px;
+
+        .middle-tabs {
+
+          a {
+            font-size: 9px !important;
+            white-space: nowrap;
+            color: white !important;
+            border: none !important;
+          }
+
+          li {
+            background-color: #00bfe6 !important;
+          }
+
+          a:hover {
+            background-color: transparent !important;
+            border: none !important;
+          }
+
+
+          .active {
+            li {
+            }
+            a {
+              font-size: 12px !important;
+              font-weight: bold;
+              color: black !important;
+              border-radius: 0 !important;
+
+            }
+
+            a:hover {
+              background-color: white !important;
+            }
+
+            li:hover {
+              background-color: transparent !important;
+            }
+          }
+        }
 
         .middle-block-row {
           height: 40vh !important;
@@ -334,9 +414,12 @@ body {
           .sponsored-label {
             font-size: 10pt;
             font-weight: bold;
+            position: relative;
+            top: 10px;
           }
           img {
-            width: 85%;
+            width: 260px;
+            height: 150px;
           }
         }
 
@@ -347,53 +430,25 @@ body {
         .sponsored-job {
           min-height: 3vh !important;
 
-          .inner-div-1 {
-            display: table;
-            width: 100%;
+          img {
+            width: 70px;
+            height: 70px;
+          }
+          .job-title {
+            position: relative;
+            font-size: 13px;
+            left: 0;
+            white-space: nowrap;
+          }
 
-            .inner-div-2 {
-              display: table-cell;
-              width: 100%;
-            }
-            #left-cell {
-              display: table-cell;
-              width: 10vw;
+          .job-descr {
+            position: relative;
+            font-size: 7pt;
+          }
 
-              img {
-                width: 100px;
-                height: 100px;
-              }
-            }
-
-            #right-cell {
-              display: table-cell;
-              width: 90vw;
-
-              .job-title {
-                font-weight: bold;
-                position: relative;
-                top: -33px;
-                text-align: center;
-              }
-
-              .job-descr {
-                position: relative;
-                top: -33px;
-                padding-left: 5px;
-                white-space: nowrap;
-                color: #1b6d85;
-                font-size: 9pt;
-              }
-
-              .job-info {
-                position: relative;
-                top: -33px;
-                padding-left: 5px;
-                white-space: nowrap;
-                color: #1b6d85;
-                font-size: 7pt;
-              }
-            }
+          .job-info {
+            position: relative;
+            font-size: 7pt;
           }
         }
       }
@@ -402,6 +457,13 @@ body {
 }
 
 @media @mobile, @tablet {
+
+  .header {
+    margin: 0 0 50px 0;
+    i {
+      color: black;
+    }
+  }
   .content {
     padding-bottom: 90px;
     min-height: 85vh;
@@ -415,6 +477,30 @@ body {
         height: 200px !important;
         background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
         background-size: cover;
+
+        .avatar {
+          border: 1px solid grey;
+          background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
+          background-position: 130px 1px;
+          background-size: 190%;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          position: relative;
+          top: 90px;
+        }
+
+        .text-container {
+          position: relative;
+          top: 10px;
+          left: 100px;
+          color: #ffffff;
+          font-size: 9px;
+
+          h5 {
+            font-size: 11px;
+          }
+        }
       }
 
       .carousel {
@@ -461,6 +547,29 @@ body {
         //border: 10px solid #f1f1f1;
         border-left: none;
         background-color: #ffffff;
+
+        .icons {
+          background-color: rgb(219, 219, 219);
+          position: relative;
+          top: -44px;
+          width: 90%;
+          left: 10px;
+
+          .num {
+            color: grey;
+            padding-left: 10px;
+          }
+        }
+
+        .more-con {
+          white-space: nowrap;
+          font-weight: bold;
+
+          a {
+            color: black;
+          }
+        }
+
 
         .invite-btn {
           visibility: hidden;
@@ -607,6 +716,31 @@ body {
 
         #right-label {
           margin-top: 20px !important;
+        }
+
+        .sponsored-job {
+          min-height: 3vh !important;
+
+          img {
+            width: 70px;
+            height: 70px;
+          }
+          .job-title {
+            position: relative;
+            font-size: 13px;
+            left: 0;
+            white-space: nowrap;
+          }
+
+          .job-descr {
+            position: relative;
+            font-size: 7pt;
+          }
+
+          .job-info {
+            position: relative;
+            font-size: 7pt;
+          }
         }
       }
     }
