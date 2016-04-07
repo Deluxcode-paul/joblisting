@@ -5,586 +5,394 @@
 html,
 body {
   height: 100%;
-  background-color: #f1f1f1;
+  background-color: #f5f5f5;
 }
 .wrapper {
   position: relative;
   min-height: 100%;
 }
 .wrapper .header {
-  margin: 0 10px;
+  padding: 20px 80px;
 }
 .wrapper .header nav {
   background-color: transparent;
-  box-shadow: none;
+  box-shadow: none !important;
 }
-.wrapper .header nav ul a {
-  transition: background-color 0.3s;
-  font-size: 1rem;
+.wrapper .header nav .brand-logo {
+  background: url("https://www.joblisting.com/images/logo.png");
+  width: 122px;
+  height: 66px;
+}
+.wrapper .header nav .hide-on-med-and-down a {
+  color: #000000;
+  font-weight: 500;
+}
+.wrapper .header nav .hide-on-med-and-down .login-button {
+  background-color: #428bca !important;
+  color: #ffffff;
+}
+.wrapper .header nav .hide-on-med-and-down a:hover {
+  background-color: transparent !important;
+  text-decoration: none !important;
+  color: #428bca !important;
+}
+.wrapper .header nav .hide-on-med-and-down .login-button:hover {
+  background-color: #428bca !important;
+  color: #ffffff !important;
+}
+.wrapper .content {
+  padding: 0 80px 80px 80px;
+}
+.wrapper .content .col-lg-6 {
+  padding: 0 !important;
+}
+.wrapper .content .col-lg-3 {
+  padding: 0 !important;
+}
+.wrapper .content #left {
+  background-color: #ffffff;
+}
+.wrapper .content #right {
+  background-color: #ffffff;
+}
+.wrapper .content .image-block {
+  padding: 0 !important;
+  height: 26rem;
+}
+.wrapper .content .image-block .left-image {
+  background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
+  background-size: cover;
+  min-height: 26rem;
+}
+.wrapper .content .image-block .left-image img {
+  height: 26rem;
+  width: 90%;
+}
+.wrapper .content .image-block .left-image .avatar {
+  border: 1px solid grey;
+  background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
+  background-position: 200px 1px;
+  background-size: 190%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  top: 210px;
+  left: 30px;
+}
+.wrapper .content .image-block .left-image .text-container {
+  position: relative;
+  top: 100px !important;
+  left: 250px;
+  color: #ffffff;
+}
+.wrapper .content .image-block .left-image .text-container h5 {
+  font-size: 12pt;
+}
+.wrapper .content .image-block .right-image {
+  min-height: 26rem;
+}
+.wrapper .content .image-block .right-image .carousel {
+  height: 13rem !important;
+}
+.wrapper .content .image-block .right-image .right-top-image {
+  height: 13rem;
+}
+.wrapper .content .image-block .right-image .right-bottom-image {
+  min-height: 200px;
+}
+.wrapper .content .image-block .right-image .carousel-control {
+  width: 8%;
+}
+.wrapper .content .image-block .right-image .carousel-inner .item img {
+  width: 100%;
+  margin: auto;
+}
+.wrapper .content .image-block .right-image .carousel-inner .item a img {
+  width: 100%;
+  margin: auto;
+}
+.wrapper .content .sidebar {
+  width: 100%;
+  border: 3px solid #f5f5f5;
+  padding: 0 10px 0 5px;
+}
+.wrapper .content .sidebar .bar-label {
+  text-transform: uppercase;
   color: black;
-  display: inline-block;
-  padding: 0 15px;
-  cursor: pointer;
+  font-size: 9pt;
+  border-bottom: 2px solid #e93100;
+  font-weight: bold;
 }
-.wrapper .header nav a {
-  text-decoration: none;
+.wrapper .content .sidebar .sub-label {
+  color: black;
+  font-size: 9pt;
+  border-bottom: 2px solid #e93100;
+  font-weight: bold;
+  margin-top: 20px;
 }
-.wrapper .header nav .nav-wrapper .login-button {
-  background: #00aced;
+.wrapper .content .sidebar .more-con {
+  white-space: nowrap;
+  font-weight: bold;
+}
+.wrapper .content .sidebar .more-con a {
+  color: black;
+}
+.wrapper .content .sidebar .may-know-tbl {
+  display: table;
+  width: 100%;
+}
+.wrapper .content .sidebar .may-know-tbl .tbl-row {
+  display: table-row;
+}
+.wrapper .content .sidebar .may-know-tbl .tbl-row .tbl-cell {
+  display: table-cell;
+  width: 25%;
+  padding: 10px 0;
+}
+.wrapper .content .sidebar .may-know-tbl .tbl-row .tbl-cell img {
+  width: 50%;
+}
+.wrapper .content .sidebar .social-block {
+  max-height: 3vh !important;
+  border: none;
+  min-height: 0;
+}
+.wrapper .content .sidebar .import-contacts {
+  max-height: 3vh !important;
+  border: none;
+  min-height: 0;
+}
+.wrapper .content .sidebar .import-contacts img {
+  width: 32px;
+  height: 32px;
+}
+.wrapper .content .sidebar .invite-form {
+  max-height: 3vh !important;
+  border: none;
+  min-height: 0;
+}
+.wrapper .content .sidebar .left-block-items {
+  display: table;
+}
+.wrapper .content .sidebar .left-block-items .item-left,
+.wrapper .content .sidebar .left-block-items .item-right {
+  display: table-cell;
+}
+.wrapper .content .sidebar .left-block-items .item-left {
+  width: 80px;
+  height: 80px;
+}
+.wrapper .content .sidebar .left-block-items .item-left img {
+  width: 80px;
+  height: 80px;
+}
+.wrapper .content .sidebar .left-block-items .item-right {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper .content .sidebar .left-block-items .item-right .icons {
+  background-color: #dbdbdb;
+  position: relative;
+  top: -44px;
+  width: 90%;
+  left: 10px;
+}
+.wrapper .content .sidebar .left-block-items .item-right .icons .num {
+  color: grey;
+  padding-left: 10px;
+}
+.wrapper .content .sidebar .left-block-items .item-right label {
+  text-transform: uppercase;
+  margin-left: 10px !important;
+  position: relative;
+  top: -33px;
+}
+.wrapper .content .sidebar .left-block-items .item-right label a {
+  color: grey;
+}
+.wrapper .content .sidebar .left-block-items .item-right p {
+  margin-left: 10px;
+  position: relative;
+  top: -35px;
+}
+.wrapper .content .sidebar .sponsored {
+  min-height: 3vh !important;
+}
+.wrapper .content .sidebar .sponsored .sponsored-label {
+  font-size: 10pt;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  padding-left: 15px;
+}
+.wrapper .content .sidebar .sponsored img {
+  width: 260px;
+  height: 150px;
+  padding-left: 15px;
+}
+.wrapper .content .sidebar #right-label {
+  margin-top: 20px !important;
+}
+.wrapper .content .sidebar .sponsored-job {
+  min-height: 3vh !important;
+}
+.wrapper .content .sidebar .sponsored-job img {
+  width: 70px;
+  height: 70px;
+}
+.wrapper .content .sidebar .sponsored-job .job-title {
+  position: relative;
+  font-size: 13px;
+  left: 0;
+  white-space: nowrap;
+}
+.wrapper .content .sidebar .sponsored-job .job-descr {
+  position: relative;
+  font-size: 7pt;
+}
+.wrapper .content .sidebar .sponsored-job .job-info {
+  position: relative;
+  font-size: 7pt;
+}
+.wrapper .content .middle-block {
+  background-color: #ffffff;
+  min-height: 1366px;
+  border: 3px solid #f5f5f5;
+}
+.wrapper .content .middle-block .secondary-row {
+  margin: 5px 5px;
+}
+.wrapper .content .middle-block .middle-block-row {
+  height: 40vh !important;
+  background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
+  background-size: cover;
+  margin-bottom: 5% !important;
+  margin: 5px 5px;
+}
+.wrapper .content .middle-block .middle-block-row label {
+  position: relative;
+  top: 25vh !important;
+  left: 30px;
+  background-color: transparent;
   color: white;
+  text-transform: uppercase;
+  padding: 5px 10px 5px 10px;
+}
+.wrapper .content .middle-block .middle-block-row h5 {
+  position: relative;
+  top: 25vh;
+  left: 30px;
+  color: white;
+  word-wrap: break-word;
+  text-shadow: grey;
+  font-size: 13pt;
+}
+.wrapper .content .middle-block .middle-tabs a {
+  font-size: 9px !important;
+  white-space: nowrap;
+  color: white !important;
+  border: none !important;
+}
+.wrapper .content .middle-block .middle-tabs li {
+  background-color: #00bfe6 !important;
+}
+.wrapper .content .middle-block .middle-tabs a:hover {
+  background-color: transparent !important;
+  border: none !important;
+}
+.wrapper .content .middle-block .middle-tabs .active a {
+  font-size: 12px !important;
+  font-weight: bold;
+  color: black !important;
+  border-radius: 0 !important;
+}
+.wrapper .content .middle-block .middle-tabs .active a:hover {
+  background-color: white !important;
+}
+.wrapper .content .middle-block .middle-tabs .active li:hover {
+  background-color: transparent !important;
 }
 .wrapper .footer {
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 80px;
+  background-color: transparent;
 }
-@media only screen and (min-width: 960px) and (max-width: 1440px), only screen and (min-width: 1441px) {
-  .header {
-    margin: 0 10px;
-    padding: 0 100px;
-  }
-  .header .hide-on-med-and-down a:hover {
-    background-color: transparent !important;
-    color: #00aced !important;
-  }
-  .header .hide-on-med-and-down .login-button:hover {
-    background-color: #00aced !important;
-    color: white !important;
-  }
-  .footer ul li {
-    display: inline;
-    text-align: center;
-  }
-  .footer ul li a {
-    color: black;
-    padding-left: 10px;
-    font-size: 12px;
-  }
-  .content {
-    padding-bottom: 90px;
-    min-height: 70vh;
-    margin: 0 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  .content .row {
-    margin: 0;
-  }
-  .content .row #leftCol {
-    padding: 0;
-  }
-  .content .row .affix-top,
-  .content .row .affix,
-  .content .row .affix-bottom {
-    position: static;
-  }
-  .content .row #sidebar.affix-top {
-    position: static;
-    width: 25vw;
-    padding: 20px 50px;
-  }
-  .content .row #sidebar.affix-bottom {
-    position: fixed;
-    width: 25vw;
-    padding: 20px 50px;
-  }
-  .content .row #sidebar.affix {
-    position: fixed;
-    top: 0;
-    margin: 0 auto;
-    padding: 20px 50px;
-    bottom: 205px;
-    background-color: #ffffff;
-  }
-  .content .row .bar-label {
-    text-transform: uppercase;
-    color: black;
-    font-size: 12pt;
-    border-bottom: 2px solid #e93100;
-    font-weight: bold;
-  }
-  .content .row .sub-label {
-    color: black;
-    font-size: 12pt;
-    border-bottom: 2px solid #e93100;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  .content .row #second-bar-label {
-    margin-top: 20px;
-  }
-  .content .row .left-image {
-    min-height: 400px;
-    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
-    background-size: cover;
-  }
-  .content .row .left-image .avatar {
-    border: 1px solid grey;
-    background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
-    background-position: 260px 1px;
-    background-size: 190%;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    position: relative;
-    top: 150px;
-  }
-  .content .row .left-image .text-container {
-    position: relative;
-    top: 10px;
-    left: 250px;
-    color: #ffffff;
-  }
-  .content .row .carousel {
-    height: 200px !important;
-    left: 15px;
-  }
-  .content .row .right-top-image {
-    min-height: 200px;
-  }
-  .content .row .right-bottom-image {
-    min-height: 200px;
-  }
-  .content .row .carousel-control {
-    width: 8%;
-  }
-  .content .row .carousel-inner .item img {
-    width: 100%;
-    margin: auto;
-  }
-  .content .row .carousel-inner .item a img {
-    width: 100%;
-    margin: auto;
-  }
-  .content .row .left-block {
-    border: 10px solid #f1f1f1;
-    border-left: none;
-    background-color: #ffffff;
-    padding: 0 50px;
-  }
-  .content .row .left-block .more-con {
-    white-space: nowrap;
-    font-weight: bold;
-  }
-  .content .row .left-block .more-con a {
-    color: black;
-  }
-  .content .row .left-block .may-know-tbl {
-    display: table;
-    width: 100%;
-  }
-  .content .row .left-block .may-know-tbl .tbl-row {
-    display: table-row;
-  }
-  .content .row .left-block .may-know-tbl .tbl-row .tbl-cell {
-    display: table-cell;
-    width: 25%;
-    padding: 10px 0;
-  }
-  .content .row .left-block .may-know-tbl .tbl-row .tbl-cell img {
-    width: 50%;
-  }
-  .content .row .left-block .social-block {
-    max-height: 3vh !important;
-    border: none;
-    min-height: 0;
-  }
-  .content .row .left-block .import-contacts {
-    max-height: 3vh !important;
-    border: none;
-    min-height: 0;
-  }
-  .content .row .left-block .import-contacts img {
-    width: 32px;
-    height: 32px;
-  }
-  .content .row .left-block .invite-form {
-    max-height: 3vh !important;
-    border: none;
-    min-height: 0;
-  }
-  .content .row .left-block .left-block-items {
-    display: table;
-  }
-  .content .row .left-block .left-block-items .item-left,
-  .content .row .left-block .left-block-items .item-right {
-    display: table-cell;
-  }
-  .content .row .left-block .left-block-items .item-left {
-    width: 80px;
-    height: 80px;
-  }
-  .content .row .left-block .left-block-items .item-left img {
-    width: 80px;
-    height: 80px;
-  }
-  .content .row .left-block .left-block-items .item-right {
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .content .row .left-block .left-block-items .item-right .icons {
-    background-color: #dbdbdb;
-    position: relative;
-    top: -44px;
-    width: 90%;
-    left: 10px;
-  }
-  .content .row .left-block .left-block-items .item-right .icons .num {
-    color: grey;
-    padding-left: 10px;
-  }
-  .content .row .left-block .left-block-items .item-right label {
-    text-transform: uppercase;
-    margin-left: 10px !important;
-    position: relative;
-    top: -33px;
-  }
-  .content .row .left-block .left-block-items .item-right label a {
-    color: grey;
-  }
-  .content .row .left-block .left-block-items .item-right p {
-    margin-left: 10px;
-    position: relative;
-    top: -35px;
-  }
-  .content .row .middle-block {
-    border: 10px solid #f1f1f1;
-    background-color: #ffffff;
-    padding: 10px 10px;
-  }
-  .content .row .middle-block .middle-tabs a {
-    font-size: 9px !important;
-    white-space: nowrap;
-    color: white !important;
-    border: none !important;
-  }
-  .content .row .middle-block .middle-tabs li {
-    background-color: #00bfe6 !important;
-  }
-  .content .row .middle-block .middle-tabs a:hover {
-    background-color: transparent !important;
-    border: none !important;
-  }
-  .content .row .middle-block .middle-tabs .active a {
-    font-size: 12px !important;
-    font-weight: bold;
-    color: black !important;
-    border-radius: 0 !important;
-  }
-  .content .row .middle-block .middle-tabs .active a:hover {
-    background-color: white !important;
-  }
-  .content .row .middle-block .middle-tabs .active li:hover {
-    background-color: transparent !important;
-  }
-  .content .row .middle-block .middle-block-row {
-    height: 40vh !important;
-    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
-    background-size: cover;
-    margin-bottom: 5%;
-  }
-  .content .row .middle-block .middle-block-row label {
-    position: relative;
-    top: 25vh !important;
-    left: 30px;
-    background-color: transparent;
-    color: white;
-    text-transform: uppercase;
-    padding: 5px 10px 5px 10px;
-  }
-  .content .row .middle-block .middle-block-row h5 {
-    position: relative;
-    top: 25vh;
-    left: 30px;
-    color: white;
-    word-wrap: break-word;
-    text-shadow: grey;
-  }
-  .content .row .middle-block .secondary-row {
-    margin-top: 5%;
-  }
-  .content .row .right-block {
-    border: 10px solid #f1f1f1;
-    border-right: none;
-    background-color: #ffffff;
-    padding: 20px 10px;
-  }
-  .content .row .right-block .sponsored {
-    min-height: 3vh !important;
-  }
-  .content .row .right-block .sponsored .sponsored-label {
-    font-size: 10pt;
-    font-weight: bold;
-    position: relative;
-    top: 10px;
-  }
-  .content .row .right-block .sponsored img {
-    width: 260px;
-    height: 150px;
-  }
-  .content .row .right-block #right-label {
-    margin-top: 20px !important;
-  }
-  .content .row .right-block .sponsored-job {
-    min-height: 3vh !important;
-  }
-  .content .row .right-block .sponsored-job img {
-    width: 70px;
-    height: 70px;
-  }
-  .content .row .right-block .sponsored-job .job-title {
-    position: relative;
-    font-size: 13px;
-    left: 0;
-    white-space: nowrap;
-  }
-  .content .row .right-block .sponsored-job .job-descr {
-    position: relative;
-    font-size: 7pt;
-  }
-  .content .row .right-block .sponsored-job .job-info {
-    position: relative;
-    font-size: 7pt;
-  }
+.wrapper .footer ul li {
+  display: inline;
+  text-align: center;
+}
+.wrapper .footer ul li a {
+  color: black;
+  padding-left: 10px;
+  font-size: 12px;
 }
 @media only screen and (max-width: 719px), only screen and (min-width: 720px) and (max-width: 959px) {
-  .header {
-    margin: 0 0 50px 0;
+  .footer ul {
+    padding: 40px 0 0 0;
   }
-  .header i {
-    color: black;
+  .wrapper .content .image-block .right-image .right-top-image {
+    height: 10.5rem;
+  }
+  .wrapper .content .col-lg-6 {
+    padding: 0 !important;
+    margin-top: 10px;
+  }
+  .header {
+    padding: 0 0 20px 0 !important;
   }
   .content {
-    padding-bottom: 90px;
-    min-height: 85vh;
-    margin: 0 10px;
+    padding: 0 !important;
   }
-  .content .row {
-    min-height: 400px;
-    margin: 0;
+  .content .waves-effect {
+    visibility: hidden;
   }
-  .content .row .left-image {
-    height: 200px !important;
-    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
-    background-size: cover;
+  .content .image-block {
+    margin-bottom: 350px !important;
   }
-  .content .row .left-image .avatar {
+  .content .image-block .avatar {
     border: 1px solid grey;
     background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
-    background-position: 130px 1px;
+    background-position: 200px 1px;
     background-size: 190%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     position: relative;
-    top: 90px;
+    top: 210px;
+    left: 30px;
   }
-  .content .row .left-image .text-container {
+  .content .image-block .text-container {
     position: relative;
-    top: 10px;
-    left: 100px;
+    top: 100px !important;
+    left: 200px !important;
     color: #ffffff;
-    font-size: 9px;
   }
-  .content .row .left-image .text-container h5 {
-    font-size: 11px;
+  .content .image-block .text-container h5 {
+    font-size: 10pt !important;
   }
-  .content .row .carousel {
-    height: 60px !important;
+  .content .image-block .carousel {
+    height: 13rem !important;
   }
-  .content .row .right-top-image {
-    min-height: 100px;
+  .content .image-block .right-top-image {
+    height: 13rem;
   }
-  .content .row .right-bottom-image {
-    min-height: 100px;
+  .content .image-block .right-bottom-image {
+    min-height: 200px;
   }
-  .content .row #leftCol {
-    padding: 0;
+  .content .image-block .carousel-control {
+    width: 8%;
   }
-  .content .row #rightCol {
-    padding: 0;
-  }
-  .content .row .bar-label {
-    text-transform: uppercase;
-    color: black;
-    font-size: 12pt;
-    border-bottom: 2px solid #e93100;
-    font-weight: bold;
-  }
-  .content .row .sub-label {
-    color: black;
-    font-size: 12pt;
-    border-bottom: 2px solid #e93100;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  .content .row #second-bar-label {
-    margin-top: 20px;
-  }
-  .content .row .left-block {
-    border-left: none;
-    background-color: #ffffff;
-  }
-  .content .row .left-block .icons {
-    background-color: #dbdbdb;
-    position: relative;
-    top: -44px;
-    width: 90%;
-    left: 10px;
-  }
-  .content .row .left-block .icons .num {
-    color: grey;
-    padding-left: 10px;
-  }
-  .content .row .left-block .more-con {
-    white-space: nowrap;
-    font-weight: bold;
-  }
-  .content .row .left-block .more-con a {
-    color: black;
-  }
-  .content .row .left-block .invite-btn {
-    visibility: hidden;
-  }
-  .content .row .left-block .invite-btn {
-    visibility: hidden;
-  }
-  .content .row .left-block .may-know-tbl {
-    display: table;
+  .content .image-block .carousel-inner .item img {
     width: 100%;
+    margin: auto;
   }
-  .content .row .left-block .may-know-tbl .tbl-row {
-    display: table-row;
-  }
-  .content .row .left-block .may-know-tbl .tbl-row .tbl-cell {
-    display: table-cell;
-    width: 25%;
-    padding: 5% 0;
-  }
-  .content .row .left-block .may-know-tbl .tbl-row .tbl-cell img {
-    width: 50%;
-  }
-  .content .row .left-block .social-block {
-    max-height: 3vh !important;
-    border: none;
-    min-height: 0;
-  }
-  .content .row .left-block .import-contacts {
-    max-height: 3vh !important;
-    border: none;
-    min-height: 0;
-  }
-  .content .row .left-block .import-contacts img {
-    width: 32px;
-    height: 32px;
-  }
-  .content .row .left-block .invite-form {
-    max-height: 3vh !important;
-    border: none;
-    min-height: 0;
-  }
-  .content .row .left-block .left-block-items {
-    display: table;
-  }
-  .content .row .left-block .left-block-items .item-left,
-  .content .row .left-block .left-block-items .item-right {
-    display: table-cell;
-  }
-  .content .row .left-block .left-block-items .item-left {
-    width: 80px;
-    height: 80px;
-  }
-  .content .row .left-block .left-block-items .item-left img {
-    width: 80px;
-    height: 80px;
-  }
-  .content .row .left-block .left-block-items .item-right {
-    padding: 0;
+  .content .image-block .carousel-inner .item a img {
     width: 100%;
-    margin: 0 auto;
-  }
-  .content .row .left-block .left-block-items .item-right label {
-    text-transform: uppercase;
-    margin-left: 10px !important;
-    position: relative;
-    top: -33px;
-  }
-  .content .row .left-block .left-block-items .item-right p {
-    margin-left: 10px;
-    position: relative;
-    top: -33px;
-  }
-  .content .row .middle-block {
-    border: 10px solid #f1f1f1;
-    background-color: #ffffff;
-    padding: 20px 10px;
-  }
-  .content .row .middle-block .middle-block-row {
-    height: 40vh !important;
-    background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
-    background-size: cover;
-    margin-bottom: 5%;
-  }
-  .content .row .middle-block .middle-block-row label {
-    position: relative;
-    top: 25vh !important;
-    left: 30px;
-    background-color: transparent;
-    color: white;
-    text-transform: uppercase;
-    padding: 5px 10px 5px 10px;
-  }
-  .content .row .middle-block .middle-block-row h4 {
-    position: relative;
-    top: 25vh;
-    left: 30px;
-    color: white;
-    word-wrap: break-word;
-    text-shadow: grey;
-  }
-  .content .row .middle-block .secondary-row {
-    margin-top: 5%;
-  }
-  .content .row .right-block {
-    margin-top: 10px;
-    background-color: #ffffff;
-    padding: 20px 10px;
-  }
-  .content .row .right-block .sponsored {
-    min-height: 3vh !important;
-  }
-  .content .row .right-block .sponsored .sponsored-label {
-    font-size: 10pt;
-    font-weight: bold;
-  }
-  .content .row .right-block .sponsored img {
-    width: 85%;
-  }
-  .content .row .right-block #right-label {
-    margin-top: 20px !important;
-  }
-  .content .row .right-block .sponsored-job {
-    min-height: 3vh !important;
-  }
-  .content .row .right-block .sponsored-job img {
-    width: 70px;
-    height: 70px;
-  }
-  .content .row .right-block .sponsored-job .job-title {
-    position: relative;
-    font-size: 13px;
-    left: 0;
-    white-space: nowrap;
-  }
-  .content .row .right-block .sponsored-job .job-descr {
-    position: relative;
-    font-size: 7pt;
-  }
-  .content .row .right-block .sponsored-job .job-info {
-    position: relative;
-    font-size: 7pt;
+    margin: auto;
   }
 }

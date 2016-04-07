@@ -6,7 +6,7 @@
 html,
 body {
   height: 100%;
-  background-color: #f1f1f1;
+  background-color: #f5f5f5;
 }
 
 .wrapper {
@@ -14,75 +14,402 @@ body {
   min-height: 100%;
 
   .header {
-
-    margin: 0 10px;
-
+    padding: 20px 80px;
     nav {
       background-color: transparent;
-      box-shadow: none;
+      box-shadow: none !important;
 
-      ul a {
-        transition: background-color .3s;
-        font-size: 1rem;
-        color: black;
-        display: inline-block;
-        padding: 0 15px;
-        cursor: pointer;
+      .brand-logo {
+        background: url("https://www.joblisting.com/images/logo.png");
+        width: 122px;
+        height: 66px;
       }
 
-      a {
-        text-decoration: none;
-      }
+      .hide-on-med-and-down {
+        a {
+          color: #000000;
+          font-weight: 500;
+        }
 
-      .nav-wrapper {
         .login-button {
-          background: #00aced;
-          color: white;
+          background-color: #428bca !important;
+          color: #ffffff;
+        }
+
+        a:hover {
+          background-color: transparent !important;
+          text-decoration: none !important;
+          color: #428bca !important;
+        }
+
+        .login-button:hover {
+          background-color: #428bca !important;
+          color: #ffffff !important;
         }
       }
     }
   }
 
+  .content {
+    //    padding-bottom: 90px !important;
+    padding: 0 80px 80px 80px;
+
+    .col-lg-6 {
+      padding: 0 !important;
+    }
+
+    .col-lg-3 {
+      padding: 0 !important;
+    }
+
+    #left {
+      background-color: #ffffff;
+
+    }
+
+    #right {
+      background-color: #ffffff;
+
+    }
+
+    .image-block {
+      padding: 0 !important;
+      height: 26rem;
+
+      .left-image {
+        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
+        background-size: cover;
+        min-height: 26rem;
+
+        img {
+          height: 26rem;
+          width: 90%;
+        }
+
+        .avatar {
+          border: 1px solid grey;
+          background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
+          background-position: 200px 1px;
+          background-size: 190%;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          position: relative;
+          top: 210px;
+          left: 30px;
+        }
+
+        .text-container {
+          position: relative;
+          top: 100px !important;
+          left: 250px;
+          color: #ffffff;
+
+          h5 {
+            font-size: 12pt;
+
+          }
+        }
+      }
+
+      .right-image {
+        min-height: 26rem;
+
+        .carousel {
+          height: 13rem !important;
+        }
+
+        .right-top-image {
+          height: 13rem;
+        }
+
+        .right-bottom-image {
+          min-height: 200px;
+        }
+
+        .carousel-control {
+          width: 8%;
+        }
+
+        .carousel-inner {
+          .item {
+
+            img {
+              width: 100%;
+              margin: auto;
+            }
+
+            a {
+              img {
+                width: 100%;
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+
+    }
+    .sidebar {
+      width: 100%;
+      border: 3px solid #f5f5f5;
+      padding: 0 10px 0 5px;
+
+      .bar-label {
+        text-transform: uppercase;
+        color: black;
+        font-size: 9pt;
+        border-bottom: 2px solid #e93100;
+        font-weight: bold;
+      }
+
+      .sub-label {
+        color: black;
+        font-size: 9pt;
+        border-bottom: 2px solid #e93100;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .more-con {
+        white-space: nowrap;
+        font-weight: bold;
+
+        a {
+          color: black;
+        }
+      }
+
+      .may-know-tbl {
+        display: table;
+        width: 100%;
+
+        .tbl-row {
+          display: table-row;
+
+          .tbl-cell {
+            display: table-cell;
+            width: 25%;
+            padding: 10px 0;
+
+            img {
+              width: 50%;
+            }
+          }
+
+        }
+      }
+
+      .social-block {
+        max-height: 3vh !important;
+        border: none;
+        min-height: 0;
+      }
+
+      .import-contacts {
+        max-height: 3vh !important;
+        border: none;
+        min-height: 0;
+
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .invite-form {
+        max-height: 3vh !important;
+        border: none;
+        min-height: 0;
+      }
+
+      .left-block-items {
+        display: table;
+
+        .item-left, .item-right {
+          display: table-cell;
+        }
+
+        .item-left {
+          width: 80px;
+          height: 80px;
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+        .item-right {
+          padding: 0;
+          width: 100%;
+          margin: 0 auto;
+
+          .icons {
+            background-color: rgb(219, 219, 219);
+            position: relative;
+            top: -44px;
+            width: 90%;
+            left: 10px;
+
+            .num {
+              color: grey;
+              padding-left: 10px;
+            }
+          }
+
+          label {
+            text-transform: uppercase;
+            margin-left: 10px !important;
+            position: relative;
+            top: -33px;
+            a {
+              color: grey;
+            }
+          }
+
+          p {
+            margin-left: 10px;
+            position: relative;
+            top: -35px;
+          }
+        }
+      }
+
+      .sponsored {
+        min-height: 3vh !important;
+
+        .sponsored-label {
+          font-size: 10pt;
+          font-weight: bold;
+          position: relative;
+          top: 10px;
+          padding-left: 15px;
+        }
+        img {
+          width: 260px;
+          height: 150px;
+          padding-left: 15px;
+        }
+      }
+
+      #right-label {
+        margin-top: 20px !important;
+      }
+
+      .sponsored-job {
+        min-height: 3vh !important;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        .job-title {
+          position: relative;
+          font-size: 13px;
+          left: 0;
+          white-space: nowrap;
+        }
+
+        .job-descr {
+          position: relative;
+          font-size: 7pt;
+        }
+
+        .job-info {
+          position: relative;
+          font-size: 7pt;
+        }
+      }
+    }
+
+    .middle-block {
+      background-color: #ffffff;
+      min-height: 1366px;
+      border: 3px solid #f5f5f5;
+
+      .secondary-row {
+        margin: 5px 5px;
+      }
+
+      .middle-block-row {
+        height: 40vh !important;
+        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
+        background-size: cover;
+        margin-bottom: 5% !important;
+        margin: 5px 5px;
+
+        label {
+          position: relative;
+          top: 25vh !important;
+          left: 30px;
+          background-color: transparent;
+          color: white;
+          text-transform: uppercase;
+          padding: 5px 10px 5px 10px;
+        }
+
+        h5 {
+          position: relative;
+          top: 25vh;
+          left: 30px;
+          color: white;
+          word-wrap: break-word;
+          text-shadow: grey;
+          font-size: 13pt;
+        }
+      }
+      .middle-tabs {
+
+        a {
+          font-size: 9px !important;
+          white-space: nowrap;
+          color: white !important;
+          border: none !important;
+        }
+
+        li {
+          background-color: #00bfe6 !important;
+        }
+
+        a:hover {
+          background-color: transparent !important;
+          border: none !important;
+        }
+
+        .active {
+          li {
+          }
+          a {
+            font-size: 12px !important;
+            font-weight: bold;
+            color: black !important;
+            border-radius: 0 !important;
+
+          }
+
+          a:hover {
+            background-color: white !important;
+          }
+
+          li:hover {
+            background-color: transparent !important;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
   .footer {
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 80px;
+    background-color: transparent;
 
-    footer {
-      //      background-color: #353535  ;
-    }
-  }
-
-}
-
-@mobile: ~"only screen and (max-width: 719px)";
-@tablet: ~"only screen and (min-width: 720px) and (max-width: 959px)";
-@desktop: ~"only screen and (min-width: 960px) and (max-width: 1440px)";
-@hdscreen: ~"only screen and (min-width: 1441px)";
-
-@media @desktop,@hdscreen {
-
-  .header {
-
-    margin: 0 10px;
-    padding: 0 100px;
-
-    .hide-on-med-and-down {
-      a:hover {
-        background-color: transparent !important;
-        color: #00aced !important;
-      }
-
-      .login-button:hover {
-        background-color: #00aced !important;
-        color: white !important;
-      }
-    }
-  }
-
-  .footer {
     ul li {
       display: inline;
       text-align: center;
@@ -93,100 +420,75 @@ body {
       }
     }
   }
+}
+
+@mobile: ~"only screen and (max-width: 719px)";
+@tablet: ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@desktop: ~"only screen and (min-width: 960px) and (max-width: 1440px)";
+@hdscreen: ~"only screen and (min-width: 1441px)";
+
+@media @mobile, @tablet {
+
+  .footer {
+   ul {
+     padding: 40px 0 0 0;
+   }
+  }
+
+  .wrapper .content .image-block .right-image .right-top-image {
+    height: 10.5rem;
+  }
+
+  .wrapper .content .col-lg-6 {
+    padding: 0 !important;
+    margin-top: 10px;
+  }
+
+  .header {
+    padding: 0 0 20px 0 !important;
+  }
 
   .content {
-    padding-bottom: 90px;
-    min-height: 70vh;
-    margin: 0 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 !important;
 
-    .row {
-      margin: 0;
+    .waves-effect {
+      visibility: hidden;
+    }
 
-      #leftCol {
-        padding: 0;
+    .image-block {
+      margin-bottom: 350px !important;
+
+      .avatar {
+        border: 1px solid grey;
+        background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
+        background-position: 200px 1px;
+        background-size: 190%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: relative;
+        top: 210px;
+        left: 30px;
       }
 
-      .affix-top, .affix, .affix-bottom {
-        position: static;
-      }
+      .text-container {
+        position: relative;
+        top: 100px !important;
+        left: 200px !important;
+        color: #ffffff;
 
-      #sidebar.affix-top {
-        position: static;
-        width: 25vw;
-        padding: 20px 50px;
-      }
+        h5 {
+          font-size: 10pt !important;
 
-      #sidebar.affix-bottom {
-        position: fixed;
-        width: 25vw;
-        padding: 20px 50px;
-
-      }
-
-      #sidebar.affix {
-        position: fixed;
-        top: 0;
-        margin: 0 auto;
-        padding: 20px 50px;
-        bottom: 205px;
-        background-color: #ffffff;
-      }
-
-      .bar-label {
-        text-transform: uppercase;
-        color: black;
-        font-size: 12pt;
-        border-bottom: 2px solid #e93100;
-        font-weight: bold;
-      }
-
-      .sub-label {
-        color: black;
-        font-size: 12pt;
-        border-bottom: 2px solid #e93100;
-        font-weight: bold;
-        margin-top: 20px;
-      }
-
-      #second-bar-label {
-        margin-top: 20px;
-      }
-
-      .left-image {
-        min-height: 400px;
-        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
-        background-size: cover;
-
-        .avatar {
-          border: 1px solid grey;
-          background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
-          background-position: 260px 1px;
-          background-size: 190%;
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          position: relative;
-          top: 150px;
-        }
-
-        .text-container {
-          position: relative;
-          top: 10px;
-          left: 250px;
-          color: #ffffff;
         }
       }
 
       .carousel {
-        height: 200px !important;
-        left: 15px;
-        //width: 103.6%;
+        height: 13rem !important;
       }
 
       .right-top-image {
-        min-height: 200px;
+        height: 13rem;
       }
 
       .right-bottom-image {
@@ -210,536 +512,6 @@ body {
               width: 100%;
               margin: auto;
             }
-          }
-        }
-      }
-
-      .left-block {
-        border: 10px solid #f1f1f1;
-        border-left: none;
-        background-color: #ffffff;
-        padding: 0 50px;
-
-        .more-con {
-          white-space: nowrap;
-          font-weight: bold;
-
-          a {
-            color: black;
-          }
-        }
-
-        .may-know-tbl {
-          display: table;
-          width: 100%;
-
-          .tbl-row {
-            display: table-row;
-
-            .tbl-cell {
-              display: table-cell;
-              width: 25%;
-              padding: 10px 0;
-
-              img {
-                width: 50%;
-              }
-            }
-
-          }
-        }
-
-        .social-block {
-          max-height: 3vh !important;
-          border: none;
-          min-height: 0;
-        }
-
-        .import-contacts {
-          max-height: 3vh !important;
-          border: none;
-          min-height: 0;
-
-          img {
-            width: 32px;
-            height: 32px;
-          }
-        }
-
-        .invite-form {
-          max-height: 3vh !important;
-          border: none;
-          min-height: 0;
-        }
-
-        .left-block-items {
-          display: table;
-
-          .item-left, .item-right {
-            display: table-cell;
-          }
-
-          .item-left {
-            width: 80px;
-            height: 80px;
-            img {
-              width: 80px;
-              height: 80px;
-            }
-          }
-
-          .item-right {
-            padding: 0;
-            width: 100%;
-            margin: 0 auto;
-
-            .icons {
-              background-color: rgb(219, 219, 219);
-              position: relative;
-              top: -44px;
-              width: 90%;
-              left: 10px;
-
-              .num {
-                color: grey;
-                padding-left: 10px;
-              }
-            }
-
-            label {
-              text-transform: uppercase;
-              margin-left: 10px !important;
-              position: relative;
-              top: -33px;
-              a {
-                color: grey;
-              }
-            }
-
-            p {
-              margin-left: 10px;
-              position: relative;
-              top: -35px;
-            }
-          }
-        }
-      }
-
-      .middle-block {
-        border: 10px solid #f1f1f1;
-        //        border-left: none;
-        background-color: #ffffff;
-        padding: 10px 10px;
-
-        .middle-tabs {
-
-          a {
-            font-size: 9px !important;
-            white-space: nowrap;
-            color: white !important;
-            border: none !important;
-          }
-
-          li {
-            background-color: #00bfe6 !important;
-          }
-
-          a:hover {
-            background-color: transparent !important;
-            border: none !important;
-          }
-
-
-          .active {
-            li {
-            }
-            a {
-              font-size: 12px !important;
-              font-weight: bold;
-              color: black !important;
-              border-radius: 0 !important;
-
-            }
-
-            a:hover {
-              background-color: white !important;
-            }
-
-            li:hover {
-              background-color: transparent !important;
-            }
-          }
-        }
-
-        .middle-block-row {
-          height: 40vh !important;
-          background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
-          background-size: cover;
-          margin-bottom: 5%;
-
-          label {
-            position: relative;
-            top: 25vh !important;
-            left: 30px;
-            background-color: transparent;
-            color: white;
-            text-transform: uppercase;
-            padding: 5px 10px 5px 10px;
-          }
-
-          h5 {
-            position: relative;
-            top: 25vh;
-            left: 30px;
-            color: white;
-            word-wrap: break-word;
-            text-shadow: grey;
-          }
-        }
-
-        .secondary-row {
-          margin-top: 5%;
-        }
-      }
-
-      .right-block {
-        border: 10px solid #f1f1f1;
-        border-right: none;
-        background-color: #ffffff;
-        padding: 20px 10px;
-
-        .sponsored {
-          min-height: 3vh !important;
-
-          .sponsored-label {
-            font-size: 10pt;
-            font-weight: bold;
-            position: relative;
-            top: 10px;
-          }
-          img {
-            width: 260px;
-            height: 150px;
-          }
-        }
-
-        #right-label {
-          margin-top: 20px !important;
-        }
-
-        .sponsored-job {
-          min-height: 3vh !important;
-
-          img {
-            width: 70px;
-            height: 70px;
-          }
-          .job-title {
-            position: relative;
-            font-size: 13px;
-            left: 0;
-            white-space: nowrap;
-          }
-
-          .job-descr {
-            position: relative;
-            font-size: 7pt;
-          }
-
-          .job-info {
-            position: relative;
-            font-size: 7pt;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media @mobile, @tablet {
-
-  .header {
-    margin: 0 0 50px 0;
-    i {
-      color: black;
-    }
-  }
-  .content {
-    padding-bottom: 90px;
-    min-height: 85vh;
-    margin: 0 10px;
-
-    .row {
-      min-height: 400px;
-      margin: 0;
-
-      .left-image {
-        height: 200px !important;
-        background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
-        background-size: cover;
-
-        .avatar {
-          border: 1px solid grey;
-          background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
-          background-position: 130px 1px;
-          background-size: 190%;
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          position: relative;
-          top: 90px;
-        }
-
-        .text-container {
-          position: relative;
-          top: 10px;
-          left: 100px;
-          color: #ffffff;
-          font-size: 9px;
-
-          h5 {
-            font-size: 11px;
-          }
-        }
-      }
-
-      .carousel {
-        height: 60px !important;
-      }
-
-      .right-top-image {
-        min-height: 100px;
-      }
-
-      .right-bottom-image {
-        min-height: 100px;
-      }
-
-      #leftCol {
-        padding: 0;
-      }
-
-      #rightCol {
-        padding: 0;
-      }
-
-      .bar-label {
-        text-transform: uppercase;
-        color: black;
-        font-size: 12pt;
-        border-bottom: 2px solid #e93100;
-        font-weight: bold;
-      }
-
-      .sub-label {
-        color: black;
-        font-size: 12pt;
-        border-bottom: 2px solid #e93100;
-        font-weight: bold;
-        margin-top: 20px;
-      }
-
-      #second-bar-label {
-        margin-top: 20px;
-      }
-
-      .left-block {
-        //border: 10px solid #f1f1f1;
-        border-left: none;
-        background-color: #ffffff;
-
-        .icons {
-          background-color: rgb(219, 219, 219);
-          position: relative;
-          top: -44px;
-          width: 90%;
-          left: 10px;
-
-          .num {
-            color: grey;
-            padding-left: 10px;
-          }
-        }
-
-        .more-con {
-          white-space: nowrap;
-          font-weight: bold;
-
-          a {
-            color: black;
-          }
-        }
-
-
-        .invite-btn {
-          visibility: hidden;
-        }
-
-        .invite-btn {
-          visibility: hidden;
-        }
-
-        .may-know-tbl {
-          display: table;
-          width: 100%;
-
-          .tbl-row {
-            display: table-row;
-
-            .tbl-cell {
-              display: table-cell;
-              width: 25%;
-              padding: 5% 0;
-
-              img {
-                width: 50%;
-                //height: 70px;
-              }
-            }
-
-          }
-        }
-
-        .social-block {
-          max-height: 3vh !important;
-          border: none;
-          min-height: 0;
-        }
-
-        .import-contacts {
-          max-height: 3vh !important;
-          border: none;
-          min-height: 0;
-
-          img {
-            width: 32px;
-            height: 32px;
-          }
-        }
-
-        .invite-form {
-          max-height: 3vh !important;
-          border: none;
-          min-height: 0;
-        }
-
-        .left-block-items {
-          display: table;
-
-          .item-left, .item-right {
-            display: table-cell;
-          }
-
-          .item-left {
-            width: 80px;
-            height: 80px;
-            img {
-              width: 80px;
-              height: 80px;
-            }
-          }
-
-          .item-right {
-            padding: 0;
-            width: 100%;
-            margin: 0 auto;
-
-            label {
-              text-transform: uppercase;
-              margin-left: 10px !important;
-              position: relative;
-              top: -33px;
-            }
-
-            p {
-              margin-left: 10px;
-              position: relative;
-              top: -33px;
-            }
-          }
-        }
-      }
-
-      .middle-block {
-        border: 10px solid #f1f1f1;
-        //        border-left: none;
-        background-color: #ffffff;
-        padding: 20px 10px;
-
-        .middle-block-row {
-          height: 40vh !important;
-          background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg");
-          background-size: cover;
-          margin-bottom: 5%;
-
-          label {
-            position: relative;
-            top: 25vh !important;
-            left: 30px;
-            background-color: transparent;
-            color: white;
-            text-transform: uppercase;
-            padding: 5px 10px 5px 10px;
-          }
-
-          h4 {
-            position: relative;
-            top: 25vh;
-            left: 30px;
-            color: white;
-            word-wrap: break-word;
-            text-shadow: grey;
-          }
-        }
-
-        .secondary-row {
-          margin-top: 5%;
-        }
-      }
-
-      .right-block {
-        margin-top: 10px;
-        background-color: #ffffff;
-        padding: 20px 10px;
-
-        .sponsored {
-          min-height: 3vh !important;
-
-          .sponsored-label {
-            font-size: 10pt;
-            font-weight: bold;
-          }
-          img {
-            width: 85%;
-          }
-        }
-
-        #right-label {
-          margin-top: 20px !important;
-        }
-
-        .sponsored-job {
-          min-height: 3vh !important;
-
-          img {
-            width: 70px;
-            height: 70px;
-          }
-          .job-title {
-            position: relative;
-            font-size: 13px;
-            left: 0;
-            white-space: nowrap;
-          }
-
-          .job-descr {
-            position: relative;
-            font-size: 7pt;
-          }
-
-          .job-info {
-            position: relative;
-            font-size: 7pt;
           }
         }
       }
