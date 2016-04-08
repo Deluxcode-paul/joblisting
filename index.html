@@ -3,15 +3,13 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Joblisting</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="build/css/vendor.css" rel="stylesheet">
+    <link href="build/css/style.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
+
 <body>
 <div class="wrapper">
 
@@ -65,12 +63,12 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="images/2.jpg"
+                                    <img src="build/images/2.jpg"
                                          width="460" height="200">
                                 </div>
 
                                 <div class="item">
-                                    <img src="images/3.jpg"
+                                    <img src="build/images/3.jpg"
                                          width="460" height="200">
                                 </div>
                             </div>
@@ -92,12 +90,12 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="images/2.jpg"
+                                    <img src="build/images/2.jpg"
                                          width="460" height="200">
                                 </div>
 
                                 <div class="item">
-                                    <img src="images/3.jpg"
+                                    <img src="build/images/3.jpg"
                                          width="460" height="200">
                                 </div>
                             </div>
@@ -486,60 +484,8 @@
         </ul>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".button-collapse").sideNav();
-        });
-
-        function checkSize() {
-            if ($(window).width() > 959) {
-                $(function () { // document ready
-                    if ($('.sidebar').length) { // make sure "#sticky" element exists
-                        var el = $('.sidebar');
-                        var stickyTop = $('.sidebar').offset().top; // returns number
-                        var stickyHeight = $('.sidebar').height();
-
-                        $(window).scroll(function () { // scroll event
-
-                            var limit = $('.footer').offset().top - stickyHeight - 300;
-
-                            var windowTop = $(window).scrollTop(); // returns number
-
-                            if (stickyTop < windowTop) {
-                                el.css({
-                                    position: 'fixed',
-                                    top: 0,
-                                    width: $('#left').width(),
-                                    'background-color': 'white'
-                                });
-                            }
-                            else {
-                                el.css('position', 'static');
-
-                            }
-
-                            if (limit < windowTop) {
-                                var diff = limit - windowTop;
-                                el.css({top: diff});
-                            }
-                        });
-                    }
-                });
-            }
-        }
-
-        checkSize();
-
-        $(window).resize(function () {
-            checkSize();
-        });
-
-
-        $('.carousel').carousel();
-    </script>
+    <script src="build/js/vendor.js"></script>
+    <script src="build/js/app.js"></script>
 </div>
 </body>
 </html>
