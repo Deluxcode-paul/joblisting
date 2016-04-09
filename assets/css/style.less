@@ -1,0 +1,563 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+	background-color: #f5f5f5;
+}
+body {
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+	font-weight: 400;
+}
+a {
+	color: #03a9f4;
+}
+.category {
+	background: #fe5437;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 4px 8px;
+	font-size: 13px;
+}
+.wrapper {
+	position: relative;
+	min-height: 100%;
+
+	.header {
+		padding: 20px 80px;
+
+		nav {
+			background-color: transparent;
+			box-shadow: none;
+			margin-bottom: 0;
+
+			.navbar-brand {
+				background: url("https://www.joblisting.com/images/logo.png");
+				width: 122px;
+				height: 66px;
+			}
+			.navbar-nav {
+				a {
+					color: #000;
+					font-weight: 400;
+				}
+				.login-button {
+					border-radius: 3px;
+					padding: 8px 16px;
+					font-weight: 500;
+					margin: 11px 4px;
+					background-color: #00A6E0;
+					color: #ffffff;
+				}
+				a:hover {
+					background-color: transparent !important;
+					text-decoration: none !important;
+					color: #00A6E0 !important;
+				}
+				.login-button:hover {
+					background-color: #00A6E0 !important;
+					color: #ffffff !important;
+				}
+			}
+		}
+	}
+	.content {
+		margin-bottom: 60px;
+
+		#left {
+			background-color: #ffffff;
+		}
+		#right {
+			background-color: #ffffff;
+		}
+		.image-block {
+			margin-bottom: 15px;
+
+			.col-lg-6 {
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.left-image {
+				background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
+				background-size: cover;
+				min-height: 430px;
+				overflow: hidden;
+
+				&:after {
+					position: absolute;
+					z-index: 0;
+					content: "";
+					width: 100%;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.45) 71%, rgba(0, 0, 0, 0.64) 100%);
+				}
+				.avatar {
+					border: 2px solid rgba(0, 0, 0, 0.3);
+					background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
+					background-position: 200px 1px;
+					background-size: 190%;
+					width: 150px;
+					height: 150px;
+					border-radius: 50%;
+					position: relative;
+					z-index: 1;
+					top: 250px;
+					left: 30px;
+				}
+				.text-content {
+					position: relative;
+					z-index: 1;
+					top: 120px;
+					left: 215px;
+					color: #FFF;
+
+					h5 {
+						font-size: 28px;
+					}
+				}
+			}
+			.right-image {
+				.carousel {
+					max-height: 215px;
+					overflow: hidden;
+				}
+				.right-top-image {
+					max-height: 215px;
+					overflow: hidden;
+					position: relative;
+					z-index: 0;
+				}
+				.right-bottom-image {
+					min-height: 215px;
+				}
+				.carousel-control {
+					width: 8%;
+					z-index: 1;
+
+					.icon-left-open:before {
+						content: '\e804';
+					}
+					.icon-right-open:before {
+						content: '\e805';
+					}
+				}
+				.carousel-inner {
+					.item {
+						&:after {
+							position: absolute;
+							z-index: 1;
+							content: "";
+							width: 100%;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.45) 71%, rgba(0, 0, 0, 0.64) 100%);
+						}
+						.text-content {
+							position: absolute;
+							z-index: 2;
+							width: 100%;
+							bottom: 40px;
+							left: 40px;
+							color: #FFF;
+
+							h5 {
+								color: #FFF;
+								font-size: 24px;
+							}
+						}
+						img {
+							width: 100%;
+							margin: auto;
+						}
+						a {
+							img {
+								width: 100%;
+								margin: auto;
+							}
+						}
+					}
+				}
+			}
+		}
+		.sidebar {
+			width: 100%;
+			padding: 15px 5px;
+
+			&__widget {
+				margin-bottom: 25px;
+
+				&:last-child {
+					margin-bottom: 10px;
+				}
+				.social-block {
+					width: 100%;
+					text-align: center;
+
+					&__item {
+						display: inline-block;
+						margin-left: 8px;
+
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+				}
+				.connections-block {
+					&__item {
+						margin-bottom: 25px;
+						clear: both;
+					}
+					&__align-left {
+						width: 80px;
+						height: 80px;
+						float: left;
+
+						img {
+							width: 80px;
+							height: 80px;
+							margin-top: 5px;
+						}
+					}
+					&__align-right {
+						padding: 0;
+						margin-left: 90px;
+
+						.meta {
+							background-color: #f5f5f5;
+							padding: 6px 8px 8px;
+							position: relative;
+
+							.meta-item {
+								display: inline-block;
+								margin-left: 8px;
+
+								i {
+									color: #999;
+								}
+								&:first-child {
+									margin-left: 3px;
+								}
+								.num {
+									color: #999;
+									font-size: 12px;
+								}
+							}
+						}
+						.category {
+							text-transform: uppercase;
+							background: transparent;
+							position: relative;
+							font-size: 12px;
+							padding: 0;
+
+							a {
+								color: #999;
+							}
+						}
+						.descr {
+							position: relative;
+						}
+					}
+				}
+				.import-contacts-block {
+					width: 100%;
+					text-align: center;
+
+					&__item {
+						display: inline-block;
+						margin-left: 8px;
+
+						img {
+							width: auto;
+							height: 32px;
+						}
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+				}
+				.avatar-block {
+					width: 100%;
+					text-align: center;
+
+					&__item {
+						text-align: center;
+						width: calc(~"25% - 9px");
+						height: auto;
+						float: left;
+						margin: 0 10px 15px 0;
+
+						img {
+							width: 100%;
+							height: auto;
+						}
+						&:nth-of-type(4n) {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+			.sponsored-block {
+				&__item {
+					margin-bottom: 15px;
+
+					.sponsored-label {
+						font-size: 14px;
+						font-weight: bold;
+						position: relative;
+					}
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+			.sponsored-job-block {
+				&__item {
+					margin-bottom: 15px;
+					clear: both;
+				}
+				&__align-left {
+					width: 80px;
+					min-height: 140px;
+					float: left;
+
+					img {
+						width: 70px;
+						height: 70px;
+					}
+				}
+				&__align-right {
+				}
+				&__job-title {
+					position: relative;
+					font-size: 14px;
+					left: 0;
+					white-space: nowrap;
+				}
+				&__job-descr {
+					position: relative;
+					font-size: 12px;
+				}
+				&__job-info {
+					position: relative;
+					font-size: 12px;
+				}
+			}
+			&__bar-label {
+				text-transform: uppercase;
+				color: #000;
+				font-size: 14px;
+				border-bottom: 2px solid #e93100;
+				font-weight: 600;
+				margin-top: 0;
+				margin-bottom: 20px;
+				padding-bottom: 5px;
+			}
+			&__more-con {
+				font-weight: 500;
+
+				a {
+					i {
+						font-size: 12px;
+					}
+					color: #000;
+				}
+			}
+			#right-label {
+				margin-top: 20px !important;
+			}
+		}
+		.middle-block {
+			background-color: #FFF;
+			min-height: 1200px;
+			position: relative;
+
+			.job-item {
+				&__title {
+					line-height: 1.5;
+					font-weight: 500;
+				}
+			}
+			&__secondary {
+				margin: 5px;
+			}
+			&__row {
+				height: 250px;
+				width: 100%;
+				overflow: hidden;
+				position: relative;
+				margin: 0 auto;
+
+				&:after {
+					position: absolute;
+					z-index: 1;
+					content: "";
+					width: 100%;
+					height: 100%;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.45) 71%, rgba(0, 0, 0, 0.64) 100%);
+				}
+				.thumbnail {
+					width: 100%;
+					z-index: 1;
+					position: absolute;
+					border-radius: 0;
+					border: none;
+					padding: 0;
+				}
+				.category {
+					position: relative;
+					z-index: 2;
+					top: 165px;
+					left: 30px;
+				}
+				h5 {
+					position: relative;
+					z-index: 2;
+					top: 165px;
+					left: 30px;
+					color: white;
+					word-wrap: break-word;
+					font-size: 18px;
+				}
+			}
+			&__middle-tabs {
+				a {
+					font-size: 12px;
+					white-space: nowrap;
+					color: #FFF;
+					border: none;
+					border-radius: 0;
+					padding: 10px 0;
+				}
+				li {
+					background-color: #00bfe6;
+				}
+				a:hover {
+					background-color: #FFF;
+				}
+				.active {
+					li {
+						background-color: #FFF !important;
+					}
+					a {
+						background-color: #FFF !important;
+						font-size: 14px;
+						font-weight: 500;
+						color: #000 !important;
+						border-radius: 0;
+					}
+					a:hover {
+						background-color: #FFF;
+					}
+					li:hover {
+						background-color: #FFF;
+					}
+				}
+			}
+		}
+	}
+	.footer {
+		width: 100%;
+		height: 80px;
+		background-color: transparent;
+
+		ul li {
+			display: inline;
+			text-align: center;
+
+			a {
+				color: black;
+				padding-left: 10px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+@mobile: ~"only screen and (max-width:719px)";
+@tablet: ~"only screen and (min-width:720px) and (max-width:959px)";
+@desktop: ~"only screen and (min-width:960px) and (max-width:1440px)";
+@hdscreen: ~"only screen and (min-width:1441px)";
+
+@media @mobile, @tablet {
+	.footer {
+		ul {
+			padding: 40px 0 0 0;
+		}
+	}
+	.wrapper .content .image-block .right-image .right-top-image {
+		height: 10.5rem;
+	}
+	.wrapper .content .col-lg-6 {
+		margin-top: 10px;
+	}
+	.header {
+		padding: 0 0 20px 0 !important;
+	}
+	.content {
+		margin-bottom: 40px;
+
+		.waves-effect {
+			visibility: hidden;
+		}
+		.image-block {
+			margin-bottom: 350px;
+
+			.avatar {
+				border: 1px solid #999;
+				background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
+				background-position: 200px 1px;
+				background-size: 190%;
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				position: relative;
+				top: 210px;
+				left: 30px;
+			}
+			.text-content {
+				position: relative;
+				top: 100px;
+				left: 200px;
+				color: #ffffff;
+			}
+			.carousel {
+			}
+			.right-top-image {
+			}
+			.right-bottom-image {
+				min-height: 200px;
+			}
+			.carousel-control {
+				width: 8%;
+			}
+			.carousel-inner {
+				.item {
+					img {
+						width: 100%;
+						margin: auto;
+					}
+					a {
+						img {
+							width: 100%;
+							margin: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
