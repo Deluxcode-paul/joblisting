@@ -5,8 +5,8 @@
     <title>Joblisting</title>
     <link href="build/css/vendor.css" rel="stylesheet">
     <link href="build/css/style.css" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="build/fonts/fontello/css/fontello.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,400italic' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
@@ -14,43 +14,30 @@
 <div class="wrapper">
 
     <div class="header">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">
-                    <!--<img src="https://www.joblisting.com/images/logo.png">-->
-                </a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#!" class="navbar-brand"></a>
+                <ul class="nav navbar-nav navbar-right" id="mobile-demo">
                     <li><a href="">Search People</a></li>
                     <li><a href="">Search Jobseekers</a></li>
                     <li><a href="">Search Resumes</a></li>
                     <li><a href="">Search Jobs</a></li>
                     <li><a href="">List Your Job</a></li>
-                    <li><a href="" class="login-button"><span class="glyphicon glyphicon-lock"></span>&nbsp;Login</a>
-                    </li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="">Search People</a></li>
-                    <li><a href="">Search Jobseekers</a></li>
-                    <li><a href="">Search Resumes</a></li>
-                    <li><a href="">Search Jobs</a></li>
-                    <li><a href="">List Your Job</a></li>
-                    <li><a href=""><span class="glyphicon glyphicon-lock"></span>&nbsp;Login</a>
+                    <li><a class="login-button" href=""><i class="icon-lock-open-alt"></i>&nbsp;Login</a>
                 </ul>
             </div>
         </nav>
-
     </div>
-    <div class="content">
+
+    <div class="container content">
         <div class="row image-block">
             <div class="col-lg-6 col-xs-12 col-sm-12 col-md-12">
                 <div class="left-image">
                     <div class="avatar">
                     </div>
-                    <div class="text-container">
-                        <p>Entertainment</p>
+                    <div class="text-content">
+                        <span class="category">Entertainment</span>
                         <h5>Pixar Theory Proves <br> Sulley was killed</h5>
-
                         <p>Some additional text</p>
                     </div>
                 </div>
@@ -75,28 +62,32 @@
 
                             <!-- Left and right controls -->
                             <a class="left carousel-control" href="#carousel-top" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <i class="icon-prev icon-left-open" aria-hidden="true"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="right carousel-control" href="#carousel-top" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <i class="icon-next icon-right-open" aria-hidden="true"></i>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
                     </div>
                     <div class="right-top-image">
                         <div class="carousel slide" data-ride="carousel" data-interval="3000">
-
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="build/images/2.jpg"
-                                         width="460" height="200">
+                                    <img src="build/images/2.jpg" width="460" height="200">
+                                    <div class="text-content">
+                                        <h5>Pixar Theory Proves <br> Sulley was killed 1</h5>
+                                        <p>Some additional text</p>
+                                    </div>
                                 </div>
-
                                 <div class="item">
-                                    <img src="build/images/3.jpg"
-                                         width="460" height="200">
+                                    <img src="build/images/3.jpg" width="460" height="200">
+                                    <div class="text-content">
+                                        <h5>Pixar Theory Proves <br> Sulley was killed 2</h5>
+                                        <p>Some additional text</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -107,235 +98,212 @@
         <div class="row main-content">
             <div class="col-lg-3" id="left">
                 <div class="sidebar">
-                    <p class="bar-label">Connections</p>
 
-                    <div class="left-block-items">
-                        <div style="display: table-row">
-                            <div class="item-left">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-3075845-passion-dance-couple-m-80x80.jpg">
-                            </div>
-                            <div class="item-right">
-                                <label><a href="#">entertainment</a></label>
+                    <div class="sidebar__widget">
+                            <h3 class="sidebar__bar-label">Connections</h3>
 
-                                <p>Breakdancing meets Bach: Get down with The Flying Steps</p>
+                            <div class="connections-block">
 
-                                <div class="icons">
-                                    <div style="display: table; width: 100%;">
-                                        <div style="display:table-row;">
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-thumbs-up"></span><span
-                                                    class="num">391</span>
+                                <div class="connections-block__item">
+                                    <div class="connections-block__align-left">
+                                        <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-4621694-guitar-s-80x80.jpg">
+                                    </div>
+                                    <div class="connections-block__align-right">
+                                        <span class="category"><a href="#">entertainment</a></span>
+
+                                        <p class="descr">Hear Kurt Cobain’s Sparse, Poignant ‘Sappy’ Demo</p>
+                                        <div class="meta">
+                                            <div class="meta-item">
+                                                <i class="icon-thumbs-up"></i>
+                                                <span class="num">391</span>
                                             </div>
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-eye-open"></span><span
-                                                    class="num">31</span>
+                                            <div class="meta-item">
+                                                <i class="icon-eye"></i>
+                                                <span class="num">31</span>
                                             </div>
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-pencil"></span><span
-                                                    class="num">20</span>
+                                            <div class="meta-item">
+                                                <i class="icon-comment-empty"></i>
+                                                <span class="num">20</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div style="display: table-row">
-                            <div class="item-left">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-3075845-passion-dance-couple-m-80x80.jpg">
-                            </div>
-                            <div class="item-right">
-                                <label><a href="#">sport</a></label>
 
-                                <p>Breakdancing meets Bach: Get down with The Flying Steps</p>
+                                <div class="connections-block__item">
+                                    <div class="connections-block__align-left">
+                                        <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-4621694-guitar-s-80x80.jpg">
+                                    </div>
+                                    <div class="connections-block__align-right">
+                                        <span class="category"><a href="#">entertainment</a></span>
 
-                                <div class="icons">
-                                    <div style="display: table; width: 100%;">
-                                        <div style="display:table-row;">
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-thumbs-up"></span><span
-                                                    class="num">391</span>
+                                        <p class="descr">Hear Kurt Cobain’s Sparse, Poignant ‘Sappy’ Demo</p>
+                                        <div class="meta">
+                                            <div class="meta-item">
+                                                <i class="icon-thumbs-up"></i>
+                                                <span class="num">391</span>
                                             </div>
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-eye-open"></span><span
-                                                    class="num">31</span>
+                                            <div class="meta-item">
+                                                <i class="icon-eye"></i>
+                                                <span class="num">31</span>
                                             </div>
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-pencil"></span><span
-                                                    class="num">20</span>
+                                            <div class="meta-item">
+                                                <i class="icon-comment-empty"></i>
+                                                <span class="num">20</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div style="display: table-row">
-                            <div class="item-left">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-4621694-guitar-s-80x80.jpg">
-                            </div>
-                            <div class="item-right">
-                                <label><a href="#">entertainment</a></label>
+                                <div class="connections-block__item">
+                                    <div class="connections-block__align-left">
+                                        <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-4621694-guitar-s-80x80.jpg">
+                                    </div>
+                                    <div class="connections-block__align-right">
+                                        <span class="category"><a href="#">entertainment</a></span>
 
-                                <p>Hear Kurt Cobain’s Sparse, Poignant ‘Sappy’ Demo</p>
-
-                                <div class="icons">
-                                    <div style="display: table; width: 100%;">
-                                        <div style="display:table-row;">
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-thumbs-up"></span><span
-                                                    class="num">391</span>
+                                        <p class="descr">Hear Kurt Cobain’s Sparse, Poignant ‘Sappy’ Demo</p>
+                                        <div class="meta">
+                                            <div class="meta-item">
+                                                <i class="icon-thumbs-up"></i>
+                                                <span class="num">391</span>
                                             </div>
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-eye-open"></span><span
-                                                    class="num">31</span>
+                                            <div class="meta-item">
+                                                <i class="icon-eye"></i>
+                                                <span class="num">31</span>
                                             </div>
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-pencil"></span><span
-                                                    class="num">20</span>
+                                            <div class="meta-item">
+                                                <i class="icon-comment-empty"></i>
+                                                <span class="num">20</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div style="display: table-row">
-                            <div class="item-left">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-2279645-woman-in-hat-s-80x80.jpg">
-                            </div>
-                            <div class="item-right">
-                                <label><a href="#">fashion</a></label>
 
-                                <p>Summer Dresses This Year</p>
+                            </div>
+                            <p class="sidebar__more-con text-right"><a href="#">See more connections
+                                <i class="icon-right-open"></i> </a></p>
+                    </div>
 
-                                <div class="icons" style="top: -25px;">
-                                    <div style="display: table; width: 100%;">
-                                        <div style="display:table-row;">
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-thumbs-up"></span><span
-                                                    class="num">391</span>
+                    <div class="sidebar__widget">
+                            <h3 class="sidebar__bar-label"> People you may know </h3>
+
+                                        <div class="avatar-block">
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/demo/" title="Paul"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/30/49822fc2e9ccf16bf1a7ff6f3cb282c6-bpthumb.jpg" class="avatar user-30-avatar avatar-58 photo" alt="Profile picture of Paul" height="58" width="58"></a>
                                             </div>
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-eye-open"></span><span
-                                                    class="num">31</span>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/socialize/" title="GhostPool"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/2/31d53749448a096b43df20db6fdb94a8-bpthumb.jpg" class="avatar user-2-avatar avatar-58 photo" alt="Profile picture of GhostPool" height="58" width="58"></a>
                                             </div>
-                                            <div style="display: table-cell">
-                                                <span class="glyphicon glyphicon-pencil"></span><span
-                                                    class="num">20</span>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/antawn/" title="Antawn Jamison"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/3/af4de556b7fb32897bf091de4fe24700-bpthumb.jpg" class="avatar user-3-avatar avatar-58 photo" alt="Profile picture of Antawn Jamison" height="58" width="58"></a>
                                             </div>
-                                        </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/michellie/" title="Michellie Jones"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/9/e218e20c8a303a4638e38d268e51b617-bpthumb.png" class="avatar user-9-avatar avatar-58 photo" alt="Profile picture of Michellie Jones" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/chynna/" title="Chynna Phillips"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/4/905249cdd9dad6c0be01743847cd2888-bpthumb.jpg" class="avatar user-4-avatar avatar-58 photo" alt="Profile picture of Chynna Phillips" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/shan/" title="Shan Foster"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/14/3a33fc857ce5ba14b1c82c838bdb97ce-bpthumb.jpg" class="avatar user-14-avatar avatar-58 photo" alt="Profile picture of Shan Foster" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/john/" title="John Caius"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/18/348dd27f1966bad73e5181532d3f2669-bpthumb.png" class="avatar user-18-avatar avatar-58 photo" alt="Profile picture of John Caius" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/picabo/" title="Picabo Street"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/11/218111530669718f7d8628ee4700cb93-bpthumb.jpg" class="avatar user-11-avatar avatar-58 photo" alt="Profile picture of Picabo Street" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/ron/" title="Ron Faucheux"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/8/e83213b70304b0538f58527bf16d8435-bpthumb.jpg" class="avatar user-8-avatar avatar-58 photo" alt="Profile picture of Ron Faucheux" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/jason/" title="Jason Chaffetz"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/20/827058d4d7ed73a63a81e731d5fd9615-bpthumb.png" class="avatar user-20-avatar avatar-58 photo" alt="Profile picture of Jason Chaffetz" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/wynonna/" title="Wynonna Judd"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/17/3f567b2c8af6e0bddb41e6f64b385561-bpthumb.png" class="avatar user-17-avatar avatar-58 photo" alt="Profile picture of Wynonna Judd" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/monta/" title="Monta Ellis"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/10/0b45db13d6c1a72018321b03f11def1c-bpthumb.png" class="avatar user-10-avatar avatar-58 photo" alt="Profile picture of Monta Ellis" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/dan/" title="Dan Cortese"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/23/0e23aba2057154f866adc086fa049808-bpthumb.png" class="avatar user-23-avatar avatar-58 photo" alt="Profile picture of Dan Cortese" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/matraca/" title="Matraca Berg"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/7/c80078d72e98c7785f8b2b2d50e6faf5-bpthumb.png" class="avatar user-7-avatar avatar-58 photo" alt="Profile picture of Matraca Berg" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/seamus/" title="Seamus"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/13/5144274d4ca7259c4afcf2bdc35ff305-bpthumb.png" class="avatar user-13-avatar avatar-58 photo" alt="Profile picture of Seamus" height="58" width="58"></a>
+                                            </div>
+                                            <div class="avatar-block__item">
+                                                <a href="http://socialize.wpengine.com/members/keir/" title="Keir Dullea"><img src="http://socialize.wpengine.com/wp-content/uploads/avatars/27/26a2d77504637950b5a51d88b3da487d-bpthumb.png" class="avatar user-27-avatar avatar-58 photo" alt="Profile picture of Keir Dullea" height="58" width="58"></a>
+                                            </div>
+                                    </div>
+
+                            <p class="sidebar__more-con text-right"><a href="#">See more connections
+                                <i class="icon-right-open"></i></a></p>
+                    </div>
+
+                    <div class="sidebar__widget">
+                            <h3 class="sidebar__bar-label">Connect with</h3>
+
+                            <div class="social-block">
+                                <div class="social-block__item">
+                                    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-32.png">
+                                </div>
+                                <div class="social-block__item">
+                                    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-32.png">
+                                </div>
+                                <div class="social-block__item">
+                                    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-32.png">
+                                </div>
+                                <div class="social-block__item">
+                                    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/google_circle_color-32.png">
+                                </div>
+                                <div class="social-block__item">
+                                    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-32.png">
+                                </div>
+                                <div class="social-block__item">
+                                    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_color-32.png">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="sidebar__widget">
+                            <p class="sidebar__bar-label"> Import contacts </p>
+
+                            <div class="import-contacts-block">
+                                <div class="import-contacts-block__item">
+                                    <img src="https://cdn4.iconfinder.com/data/icons/free-colorful-icons/128/gmail.png">
+                                </div>
+                                <div class="import-contacts-block__item">
+                                    <img src="https://cdn3.iconfinder.com/data/icons/social-media-chat-1/512/Yahoo-32.png">
+                                </div>
+                                <div class="import-contacts-block__item">
+                                    <img src="https://cdn4.iconfinder.com/data/icons/black-white-social-media/32/email_mail_envelope_send_message-32.png">
+                                </div>
+                                <div class="import-contacts-block__item">
+                                    <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699278-icon-5-file-pdf-32.png">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="sidebar__widget">
+                            <p class="sidebar__bar-label"> Invite your friend </p>
+
+                            <div class="invite-form-block">
+                                <div class="form-group is-empty">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Provide email address">
+                                        <span class="input-group-btn input-group-sm">
+                                                <button class="btn btn-raised btn-raised-mini btn-info">invite</button>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <p class="more-con text-right"><a href="#">See more connections
-                        <span class="glyphicon glyphicon-chevron-right"></span> </a></p>
-
-                    <p class="bar-label" id="second-bar-label"> People you may know </p>
-
-                    <div class="may-know-tbl">
-                        <div class="tbl-row">
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/30/49822fc2e9ccf16bf1a7ff6f3cb282c6-bpthumb.jpg">
-                            </div>
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/2/31d53749448a096b43df20db6fdb94a8-bpthumb.jpg">
-                            </div>
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/3/af4de556b7fb32897bf091de4fe24700-bpthumb.jpg">
-                            </div>
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/9/e218e20c8a303a4638e38d268e51b617-bpthumb.png">
-                            </div>
-                        </div>
-                        <div class="tbl-row">
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/30/49822fc2e9ccf16bf1a7ff6f3cb282c6-bpthumb.jpg">
-                            </div>
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/2/31d53749448a096b43df20db6fdb94a8-bpthumb.jpg">
-                            </div>
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/3/af4de556b7fb32897bf091de4fe24700-bpthumb.jpg">
-                            </div>
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/9/e218e20c8a303a4638e38d268e51b617-bpthumb.png">
-                            </div>
-                        </div>
-                        <div class="tbl-row">
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/30/49822fc2e9ccf16bf1a7ff6f3cb282c6-bpthumb.jpg">
-                            </div>
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/2/31d53749448a096b43df20db6fdb94a8-bpthumb.jpg">
-                            </div>
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/3/af4de556b7fb32897bf091de4fe24700-bpthumb.jpg">
-                            </div>
-                            <div class="tbl-cell text-center">
-                                <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/9/e218e20c8a303a4638e38d268e51b617-bpthumb.png">
-                            </div>
-                        </div>
-                    </div>
-
-                    <p class="more-con text-right"><a href="#">See more connections
-                        <span class="glyphicon glyphicon-chevron-right"></span></a></p>
-
-                    <p class="sub-label"> Connect with </p>
-
-                    <div class="row social-block" style="height: 10vh">
-                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2">
-                            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-32.png">
-                        </div>
-                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2">
-                            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-32.png">
-                        </div>
-                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2">
-                            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-32.png">
-                        </div>
-                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2">
-                            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/google_circle_color-32.png">
-                        </div>
-                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2">
-                            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-32.png">
-                        </div>
-                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2">
-                            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_color-32.png">
-                        </div>
-                    </div>
-                    <p class="sub-label"> Import contacts </p>
-
-                    <div class="row import-contacts" style="height: 10vh">
-                        <div class="col-lg-3 col-sm-3 col-xs-3 col-md-3">
-                            <img src="https://cdn4.iconfinder.com/data/icons/free-colorful-icons/128/gmail.png">
-                        </div>
-                        <div class="col-lg-3 col-sm-3 col-xs-3 col-md-3">
-                            <img src="https://cdn3.iconfinder.com/data/icons/social-media-chat-1/512/Yahoo-32.png">
-                        </div>
-                        <div class="col-lg-3 col-sm-3 col-xs-3 col-md-3">
-                            <img src="https://cdn4.iconfinder.com/data/icons/black-white-social-media/32/email_mail_envelope_send_message-32.png">
-                        </div>
-                        <div class="col-lg-3 col-sm-3 col-xs-3 col-md-3">
-                            <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699278-icon-5-file-pdf-32.png">
-                        </div>
-                    </div>
-                    <p class="sub-label"> Invite your friend </p>
-
-                    <div class="row invite-form">
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <input type="email" placeholder="Provide email address">
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <a class="btn-floating btn-small waves-effect waves-light red invite-btn"><i
-                                    class="material-icons">send</i></a>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="middle-block">
-                    <ul class="nav nav-tabs nav-justified middle-tabs">
+                    <ul class="nav nav-tabs nav-justified middle-block__middle-tabs">
                         <li class="active"><a href="#">Latest activity </a></li>
                         <li><a href="#">Profile</a></li>
                         <li><a href="#">Photos</a></li>
@@ -344,124 +312,108 @@
                         <li><a href="#">Search Jobs</a></li>
                         <li><a href="#">Control panel</a></li>
                     </ul>
-                    <div class="row middle-block-row">
-                        <label> Bussines </label>
+                    <div class="row middle-block__row">
+                        <img class="thumbnail" src="http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg">
+                        <span class="category"> Bussines</span>
                         <h5>The inside history how Google becoming an Alphabet now</h5>
                     </div>
                     <hr>
-                    <div class="row secondary-row">
+                    <div class="row middle-block__secondary">
                         <div class="col-lg-4 text-left">
-                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-23-256.png"
-                                 style="width: 128px; height: 128px;">
+                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-23-256.png" width="128" height="128">
                         </div>
-                        <div class="col-lg-20">
-                            <h6 class="job-title" style="color: #1b6d85; font-weight: bold">
-                                Senior software engineer
-                                <br/>
-                                Virtual desctop infrastructure
-                            </h6>
-
-                            <p class="job-descr">
-                                Experience software engineers for.NET Development
-                            </p>
-
-                            <p class="job-info">
-                                Texas, USA | Job listed: Feb-26-2016 | Job Expiry: Mar-26-2016 | Bookmark Job | Email
-                                job | All jibs of this company | Block
-                            </p>
+                        <div class="col-lg-8">
+                            <div class="job-item">
+                                <h5 class="job-item__title">
+                                    <a href="#">
+                                        Senior software engineer
+                                        <br/>
+                                        Virtual desctop infrastructure
+                                    </a>
+                                </h5>
+                                <p class="job-item__descr">
+                                    Experience software engineers for.NET Development
+                                </p>
+                                <p class="job-item__info">
+                                    Texas, USA | Job listed: Feb-26-2016 | Job Expiry: Mar-26-2016 | Bookmark Job | Email
+                                    job | All jibs of this company | Block
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3" id="right">
                 <div class="sidebar">
-                    <p class="bar-label"> Sponsored </p>
+                    <p class="sidebar__bar-label"> Sponsored </p>
 
-                    <div class="row sponsored">
-                        <div class="col-lg-24">
+                    <div class="sponsored-block">
+                        <div class="sponsored-block__item">
                             <p class="sponsored-label">ABC Design</p>
                             <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-8797917-group-of-business-people-working-on-an-office-desk-m-1024x635.jpg">
                         </div>
-                        <div class="col-lg-24">
+                        <div class="sponsored-block__item">
                             <p class="sponsored-label">ABC Drawing AD</p>
                             <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-8797917-group-of-business-people-working-on-an-office-desk-m-1024x635.jpg">
                         </div>
-                        <div class="col-lg-24">
+                        <div class="sponsored-block__item">
                             <p class="sponsored-label">Beach Party AD</p>
                             <img src="http://socialize.wpengine.com/wp-content/uploads/photodune-8797917-group-of-business-people-working-on-an-office-desk-m-1024x635.jpg">
                         </div>
                     </div>
-                    <p class="bar-label" id="right-label"> Sponsored Jobs </p>
+                    <p class="sidebar__bar-label" id="right-label"> Sponsored Jobs </p>
 
-                    <div class="row sponsored-job">
-                        <div class="col-lg-24 col-md-24 col-sm-24 col-xs-24">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <img
-                                                src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-23-256.png">
-                                    </td>
-                                    <td>
-                                        <h6 class="job-title">
-                                            <a href="#">Senior software engineer</a>
-                                        </h6>
-                                        <h6 class="job-title">
-                                            <a href="#">Virtual desctop infrastructure</a>
-                                        </h6>
+                    <div class="sponsored-job-block">
 
-                                        <p class="job-descr">
-                                            Experience software engineers for.NET Development
-                                        </p>
+                                <div class="sponsored-job-block__item">
+                                        <div class="sponsored-job-block__align-left">
+                                                <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-23-256.png">
+                                        </div>
+                                         <div class="sponsored-job-block__align-right">
+                                                <h6 class="sponsored-job-block__job-title">
+                                                    <a href="#">Senior software engineer</a>
+                                                </h6>
+                                                <p class="sponsored-job-block__job-descr">
+                                                    Experience software engineers for.NET Development
+                                                </p>
+                                                <p class="sponsored-job-block__job-info">
+                                                    Texas, USA | Job listed: Feb-26-2016 | Job Expiry: Mar-26-2016
+                                                </p>
+                                        </div>
+                                </div>
 
-                                        <p class="job-info">
-                                            Texas, USA | Job listed: Feb-26-2016 | Job Expiry: Mar-26-2016
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img
-                                            src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-23-256.png">
-                                    </td>
-                                    <td>
-                                        <h6 class="job-title">
-                                            <a href="#">Senior software engineer</a>
-                                        </h6>
-                                        <h6 class="job-title">
-                                            <a href="#">Virtual desctop infrastructure</a>
-                                        </h6>
-
-                                        <p class="job-descr">
-                                            Experience software engineers for.NET Development
-                                        </p>
-
-                                        <p class="job-info">
-                                            Texas, USA | Job listed: Feb-26-2016 | Job Expiry: Mar-26-2016
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img
-                                            src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-23-256.png">
-                                    </td>
-                                    <td>
-                                        <h6 class="job-title">
-                                            <a href="#">Senior software engineer</a>
-                                        </h6>
-                                        <h6 class="job-title">
-                                            <a href="#">Virtual desctop infrastructure</a>
-                                        </h6>
-
-                                        <p class="job-descr">
-                                            Experience software engineers for.NET Development
-                                        </p>
-
-                                        <p class="job-info">
-                                            Texas, USA | Job listed: Feb-26-2016 | Job Expiry: Mar-26-2016
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                                <div class="sponsored-job-block__item">
+                                        <div class="sponsored-job-block__align-left">
+                                                <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-23-256.png">
+                                        </div>
+                                         <div class="sponsored-job-block__align-right">
+                                                <h6 class="sponsored-job-block__job-title">
+                                                    <a href="#">Senior software engineer</a>
+                                                </h6>
+                                                <p class="sponsored-job-block__job-descr">
+                                                    Experience software engineers for.NET Development
+                                                </p>
+                                                <p class="sponsored-job-block__job-info">
+                                                    Texas, USA | Job listed: Feb-26-2016 | Job Expiry: Mar-26-2016
+                                                </p>
+                                        </div>
+                                </div>
+                                <div class="sponsored-job-block__item">
+                                        <div class="sponsored-job-block__align-left">
+                                                <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-23-256.png">
+                                        </div>
+                                         <div class="sponsored-job-block__align-right">
+                                                <h6 class="sponsored-job-block__job-title">
+                                                    <a href="#">Senior software engineer</a>
+                                                </h6>
+                                                <p class="sponsored-job-block__job-descr">
+                                                    Experience software engineers for.NET Development
+                                                </p>
+                                                <p class="sponsored-job-block__job-info">
+                                                    Texas, USA | Job listed: Feb-26-2016 | Job Expiry: Mar-26-2016
+                                                </p>
+                                        </div>
+                                </div>
                     </div>
                 </div>
             </div>

@@ -9,10 +9,10 @@ var gulp = require('gulp'),
     });
 
 // Start Watching: Run "gulp"
-gulp.task('default', ['vendor-dev', 'imageminify', 'watch']);
+gulp.task('default', ['vendor-dev', 'imageminify', 'fonts', 'watch']);
 
 // Run "gulp server"
-gulp.task('server', ['vendor-build', 'imageminify', 'serve', 'watch']);
+gulp.task('server', ['vendor-build', 'imageminify', 'fonts', 'serve', 'watch']);
 
 // Copies and concatinates the development vendor CSS and JS specified in Bower (Read the Docs)
 gulp.task('vendor-dev', function() {
@@ -77,6 +77,12 @@ gulp.task('build-css', function() {
 gulp.task('imageminify', function() {
     gulp.src('assets/images/*')
         .pipe(gulp.dest('build/images/'));
+});
+
+// imageminify
+gulp.task('fonts', function() {
+    gulp.src('assets/fonts/**/*')
+        .pipe(gulp.dest('build/fonts'));
 });
 
 // Default task
