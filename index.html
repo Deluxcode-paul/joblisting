@@ -11,20 +11,34 @@
 </head>
 
 <body>
+
 <div class="wrapper">
 
     <div class="header">
         <nav class="navbar">
             <div class="container">
-                <a href="#!" class="navbar-brand"></a>
-                <ul class="nav navbar-nav navbar-right" id="mobile-demo">
-                    <li><a href="">Search People</a></li>
-                    <li><a href="">Search Jobseekers</a></li>
-                    <li><a href="">Search Resumes</a></li>
-                    <li><a href="">Search Jobs</a></li>
-                    <li><a href="">List Your Job</a></li>
-                    <li><a class="login-button" href=""><i class="icon-lock-open-alt"></i>&nbsp;Login</a>
-                </ul>
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#!" class="navbar-brand"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" id="mobile-demo">
+                        <li><a href="">Search People</a></li>
+                        <li><a href="">Search Jobseekers</a></li>
+                        <li><a href="">Search Resumes</a></li>
+                        <li><a href="">Search Jobs</a></li>
+                        <li><a href="">List Your Job</a></li>
+                        <li><a class="login-button" href=""><i class="icon-lock-open-alt"></i>&nbsp;Login</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
@@ -34,6 +48,7 @@
             <div class="col-lg-6 col-xs-12 col-sm-12 col-md-12">
                 <div class="left-image">
                     <div class="avatar">
+                        <img src="https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg"/>
                     </div>
                     <div class="text-content">
                         <span class="category">Entertainment</span>
@@ -101,7 +116,7 @@
         <!-- ///////////////////////////////////////////////////////////////// SIDEBAR LEFT ///////////////////////////////////////////////////////////////// -->
 
             <div class="col-lg-3" id="left">
-                <div class="sidebar">
+                <div class="sidebar sticky">
 
                     <div class="sidebar__widget">
                             <h3 class="sidebar__bar-label">Connections</h3>
@@ -112,7 +127,7 @@
                                     </div>
                                     <div class="connections-block__align-right">
                                         <span class="category"><a href="#">entertainment</a></span>
-                                        <p class="descr">Hear Kurt Cobain’s Sparse, Poignant ‘Sappy’ Demo</p>
+                                        <p class="descr">Hear Kurt Cobain’s Sparse, Poignant</p>
                                         <div class="meta">
                                             <div class="meta-item">
                                                 <i class="icon-thumbs-up"></i>
@@ -137,7 +152,7 @@
                                     </div>
                                     <div class="connections-block__align-right">
                                         <span class="category"><a href="#">entertainment</a></span>
-                                        <p class="descr">Hear Kurt Cobain’s Sparse, Poignant ‘Sappy’ Demo</p>
+                                        <p class="descr">Hear Kurt Cobain’s Sparse, Poignant</p>
                                         <div class="meta">
                                             <div class="meta-item">
                                                 <i class="icon-thumbs-up"></i>
@@ -161,7 +176,7 @@
                                     </div>
                                     <div class="connections-block__align-right">
                                         <span class="category"><a href="#">entertainment</a></span>
-                                        <p class="descr">Hear Kurt Cobain’s Sparse, Poignant ‘Sappy’ Demo</p>
+                                        <p class="descr">Hear Kurt Cobain’s Sparse, Poignant</p>
                                         <div class="meta">
                                             <div class="meta-item">
                                                 <i class="icon-thumbs-up"></i>
@@ -292,7 +307,6 @@
                                 </div>
                             </div>
                     </div>
-
                 </div>
             </div>
 
@@ -313,7 +327,6 @@
                             <li><a href="#">Videos</a></li>
                             <li><a href="#">Search people</a></li>
                             <li><a href="#">Search Jobs</a></li>
-                            <li><a href="#">Control panel</a></li>
                         </ul>
                     </div>
 
@@ -323,8 +336,10 @@
                             <div class="posts__item">
                                 <div class="posts__image-group">
                                         <img class="thumbnail posts__thumbnail" src="http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg">
-                                        <span class="category posts__category"> Bussines</span>
-                                        <h5 class="posts__title">The inside history how Google becoming an Alphabet now</h5>
+                                        <div class="posts__text-content">
+                                            <span class="category posts__category"> Bussines</span>
+                                            <h5 class="posts__title">The inside history how Google becoming an Alphabet now</h5>
+                                        </div>
                                 </div>
 
                                 <div class="posts__activity-group">
@@ -356,8 +371,10 @@
                             <div class="posts__item">
                                 <div class="posts__image-group">
                                         <img class="thumbnail posts__thumbnail" src="http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg">
-                                        <span class="category posts__category"> Bussines</span>
-                                        <h5 class="posts__title">The inside history how Google becoming an Alphabet now</h5>
+                                        <div class="posts__text-content">
+                                            <span class="category posts__category"> Bussines</span>
+                                            <h5 class="posts__title">The inside history how Google becoming an Alphabet now</h5>
+                                        </div>
                                 </div>
 
                                 <div class="posts__activity-group">
@@ -386,12 +403,13 @@
                             </div>
 
                             <!-- 2 -->
-
                             <div class="posts__item">
                                 <div class="posts__image-group">
                                         <img class="thumbnail posts__thumbnail" src="http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg">
-                                        <span class="category posts__category"> Bussines</span>
-                                        <h5 class="posts__title">The inside history how Google becoming an Alphabet now</h5>
+                                        <div class="posts__text-content">
+                                            <span class="category posts__category"> Bussines</span>
+                                            <h5 class="posts__title">The inside history how Google becoming an Alphabet now</h5>
+                                        </div>
                                 </div>
 
                                 <div class="posts__activity-group">
@@ -420,6 +438,77 @@
                             </div>
 
                             <!-- 3 -->
+                            <div class="posts__item">
+                                <div class="posts__image-group">
+                                        <img class="thumbnail posts__thumbnail" src="http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg">
+                                        <div class="posts__text-content">
+                                            <span class="category posts__category"> Bussines</span>
+                                            <h5 class="posts__title">The inside history how Google becoming an Alphabet now</h5>
+                                        </div>
+                                </div>
+
+                                <div class="posts__activity-group">
+                                    <div class="posts__activity-avatar">
+                                        <a href="http://socialize.wpengine.com/members/jason/">
+                                            <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/20/827058d4d7ed73a63a81e731d5fd9615-bpthumb.png" alt="Profile picture of Jason Chaffetz" height="58" width="58">
+                                        </a>
+                                    </div>
+                                    <div class="posts__activity-content">
+                                        <div class="posts__activity-header">
+
+                                                <a href="http://socialize.wpengine.com/members/jason/" title="Jason Chaffetz">Jason Chaffetz</a> posted an update in the group <a href="http://socialize.wpengine.com/groups/the-tourist/">The Tourist</a> 
+
+                                                <a href="http://socialize.wpengine.com/activity/p/508/" class="view activity-time-since" title="View Discussion"><span class="posts__time-since">7 months ago</span></a>
+
+                                        </div>
+                                            <div class="posts__activity-inner">
+                                                <p>Don’t stay in bed, unless you can make money in bed. (George Burns)</p>
+                                            </div>
+                                        <div class="posts__activity-meta">
+                                        </div>
+                                    </div>
+                                        <div class="posts__activity-comments">
+                                        </div>
+                                </div>
+                            </div>
+
+                            <!-- 4 -->
+
+                            <div class="posts__item">
+                                <div class="posts__image-group">
+                                        <img class="thumbnail posts__thumbnail" src="http://socialize.wpengine.com/wp-content/uploads/photodune-11573589-business-people-communication-meeting-corporate-discussion-worki-m-740x400.jpg">
+                                        <div class="posts__text-content">
+                                            <span class="category posts__category"> Bussines</span>
+                                            <h5 class="posts__title">The inside history how Google becoming an Alphabet now</h5>
+                                        </div>
+                                </div>
+
+                                <div class="posts__activity-group">
+                                    <div class="posts__activity-avatar">
+                                        <a href="http://socialize.wpengine.com/members/jason/">
+                                            <img src="http://socialize.wpengine.com/wp-content/uploads/avatars/20/827058d4d7ed73a63a81e731d5fd9615-bpthumb.png" alt="Profile picture of Jason Chaffetz" height="58" width="58">
+                                        </a>
+                                    </div>
+                                    <div class="posts__activity-content">
+                                        <div class="posts__activity-header">
+
+                                                <a href="http://socialize.wpengine.com/members/jason/" title="Jason Chaffetz">Jason Chaffetz</a> posted an update in the group <a href="http://socialize.wpengine.com/groups/the-tourist/">The Tourist</a> 
+
+                                                <a href="http://socialize.wpengine.com/activity/p/508/" class="view activity-time-since" title="View Discussion"><span class="posts__time-since">7 months ago</span></a>
+
+                                        </div>
+                                            <div class="posts__activity-inner">
+                                                <p>Don’t stay in bed, unless you can make money in bed. (George Burns)</p>
+                                            </div>
+                                        <div class="posts__activity-meta">
+                                        </div>
+                                    </div>
+                                        <div class="posts__activity-comments">
+                                        </div>
+                                </div>
+                            </div>
+
+                            <!-- 5 -->
 
                              <div class="posts__item">
                                 <div class="row">
@@ -459,7 +548,7 @@
                 </div>
             </div>
             <div class="col-lg-3" id="right">
-                <div class="sidebar">
+                <div class="sidebar sticky">
                     <p class="sidebar__bar-label"> Sponsored </p>
 
                     <div class="sponsored-block">

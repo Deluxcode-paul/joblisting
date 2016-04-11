@@ -34,7 +34,7 @@ gulp.task('vendor-dev', function() {
 
 // Minify Custom JS: Run manually with: "gulp build-js"
 gulp.task('build-js', function() {
-    return gulp.src('assets/js/*.js')
+    return gulp.src(['assets/js/stickystate.js', 'assets/js/app.js'])
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('jshint-stylish'))
         .pipe(plugins.uglify({
