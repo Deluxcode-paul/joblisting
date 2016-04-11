@@ -15,6 +15,46 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 a {
 	color: #03a9f4;
 }
+
+/* Bootstrap fixes */
+.navbar-toggle.collapsed .icon-bar {
+	background-color: #03a9f4;
+	border: 1px solid #03a9f4;
+}
+.navbar-right {
+	margin-right: -32px;
+}
+.container {
+	max-width: 1040px;
+}
+
+/* sticky-state */
+.sticky {
+	position: sticky;
+}
+.sticky.sticky-fixed.is-sticky {
+	position: relative;
+	backface-visibility: hidden;
+}
+.sticky.sticky-fixed.is-absolute {
+	position: relative;
+	backface-visibility: hidden;
+}
+.sticky.sidebar {
+	background: #FFF;
+	z-index: 999;
+	top: 0;
+}
+.is-sticky.sidebar, .is-fixed.sidebar {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.sticky-wrap {
+}
+.sidebar {
+}
+
+/**/
 .category {
 	background: #fe5437;
 	color: #FFF;
@@ -28,7 +68,7 @@ a {
 	min-height: 100%;
 
 	.header {
-		padding: 20px 80px;
+		padding: 15px 80px;
 
 		nav {
 			background-color: transparent;
@@ -41,15 +81,19 @@ a {
 				height: 66px;
 			}
 			.navbar-nav {
+				margin-top: 21px;
+
 				a {
 					color: #000;
-					font-weight: 400;
+					padding-top: 7px;
+					padding-bottom: 8px;
+					font-weight: 500;
 				}
 				.login-button {
 					border-radius: 3px;
-					padding: 8px 16px;
+					padding: 8px 10px;
 					font-weight: 500;
-					margin: 11px 4px;
+					margin: 0 4px;
 					background-color: #00A6E0;
 					color: #ffffff;
 				}
@@ -69,9 +113,13 @@ a {
 		margin-bottom: 60px;
 
 		#left {
+			height: 3000px;
+			position: relative;
 			background-color: #ffffff;
 		}
 		#right {
+			height: 3000px;
+			position: relative;
 			background-color: #ffffff;
 		}
 		.image-block {
@@ -84,7 +132,7 @@ a {
 			.left-image {
 				background-image: url("http://socialize.wpengine.com/wp-content/uploads/photodune-6229105-happy-skater-girl-m-1560x1000.jpg");
 				background-size: cover;
-				min-height: 430px;
+				min-height: 400px;
 				overflow: hidden;
 
 				&:after {
@@ -99,23 +147,25 @@ a {
 					background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.45) 71%, rgba(0, 0, 0, 0.64) 100%);
 				}
 				.avatar {
-					border: 2px solid rgba(0, 0, 0, 0.3);
-					background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
-					background-position: 200px 1px;
-					background-size: 190%;
+					bottom: 20px;
+					left: 20px;
+					position: absolute;
+					overflow: hidden;
+					border: 2px solid rgba(0, 0, 0, .3);
 					width: 150px;
 					height: 150px;
 					border-radius: 50%;
-					position: relative;
 					z-index: 1;
-					top: 250px;
-					left: 30px;
+
+					img {
+						height: 150px;
+					}
 				}
 				.text-content {
-					position: relative;
+					position: absolute;
 					z-index: 1;
-					top: 120px;
-					left: 215px;
+					bottom: 20px;
+					left: 200px;
 					color: #FFF;
 
 					h5 {
@@ -125,17 +175,17 @@ a {
 			}
 			.right-image {
 				.carousel {
-					max-height: 215px;
+					max-height: 200px;
 					overflow: hidden;
 				}
 				.right-top-image {
-					max-height: 215px;
+					max-height: 200px;
 					overflow: hidden;
 					position: relative;
 					z-index: 0;
 				}
 				.right-bottom-image {
-					min-height: 215px;
+					max-height: 200px;
 				}
 				.carousel-control {
 					width: 8%;
@@ -165,8 +215,8 @@ a {
 							position: absolute;
 							z-index: 2;
 							width: 100%;
-							bottom: 40px;
-							left: 40px;
+							bottom: 25px;
+							left: 25px;
 							color: #FFF;
 
 							h5 {
@@ -190,7 +240,7 @@ a {
 		}
 		.sidebar {
 			width: 100%;
-			padding: 15px 5px;
+			padding: 15px 0;
 
 			&__widget {
 				margin-bottom: 25px;
@@ -204,7 +254,7 @@ a {
 
 					&__item {
 						display: inline-block;
-						margin-left: 8px;
+						margin-left: 2px;
 
 						&:first-child {
 							margin-left: 0;
@@ -233,18 +283,18 @@ a {
 
 						.meta {
 							background-color: #f5f5f5;
-							padding: 4px 8px 6px;
+							padding: 4px 0px 6px 2px;
 							position: relative;
 
 							.meta-item {
 								display: inline-block;
-								margin-left: 8px;
+								margin-left: 1px;
 
 								i {
 									color: #999;
 								}
 								&:first-child {
-									margin-left: 3px;
+									margin-left: 0px;
 								}
 								.num {
 									color: #999;
@@ -343,17 +393,12 @@ a {
 				&__align-right {
 				}
 				&__job-title {
-					position: relative;
 					font-size: 14px;
-					left: 0;
-					white-space: nowrap;
 				}
 				&__job-descr {
-					position: relative;
 					font-size: 12px;
 				}
 				&__job-info {
-					position: relative;
 					font-size: 12px;
 				}
 			}
@@ -430,7 +475,8 @@ a {
 				}
 				&__image-group {
 					position: relative;
-					height: 250px;
+					max-height: 250px;
+					overflow: hidden;
 					width: 100%;
 
 					&:after {
@@ -447,24 +493,24 @@ a {
 					}
 				}
 				&__thumbnail {
-					position: absolute;
+					position: relative;
 					width: 100%;
-					height: 100%;
+					height: auto;
+					margin-bottom: 0;
 					border-radius: 0;
 					border: none;
 					padding: 0;
 				}
-				&__category {
-					position: relative;
+				&__text-content {
+					position: absolute;
 					z-index: 2;
-					top: 165px;
-					left: 30px;
+					bottom: 20px;
+					left: 20px;
+				}
+				&__category {
 				}
 				&__title {
-					position: relative;
-					z-index: 2;
-					top: 165px;
-					left: 30px;
+					margin-bottom: 0;
 					color: white;
 					word-wrap: break-word;
 					font-size: 18px;
@@ -529,34 +575,35 @@ a {
 			font-size: 16px;
 			font-weight: 300;
 			margin: 0;
-			padding: 15px 14px 15px;
+			padding: 15px;
+			padding-right: 0;
 			position: relative;
 			float: left;
 
 			&:after {
 				position: absolute;
-				right: -39px;
+				right: -42px;
 				content: "";
 				top: 0;
 				border-color-left: #fff;
 				width: 0;
 				height: 0;
 				border-style: solid;
-				border-width: 39px 0 0 39px;
+				border-width: 42px 0 0 42px;
 				border-color: transparent transparent transparent #fff;
 				-webkit-transform: rotate(360deg);
 			}
 		}
 		&__nav {
 			margin: 0;
-			padding-left: 160px;
+			padding-left: 165px;
 
 			li {
 				display: inline-block;
 				font-size: 12px;
 				color: #000;
 				list-style: none;
-				padding: 11px 0 8px;
+				padding: 15px 0 9px;
 
 				&:last-child {
 					&:after {
@@ -600,66 +647,99 @@ a {
 @media @mobile, @tablet {
 	.footer {
 		ul {
-			padding: 40px 0 0 0;
+			padding: 0 20px 20px;
+
+			li {
+				line-height: 22px;
+			}
 		}
-	}
-	.wrapper .content .image-block .right-image .right-top-image {
-		height: 10.5rem;
 	}
 	.wrapper .content .col-lg-6 {
 		margin-top: 10px;
 	}
 	.header {
-		padding: 0 0 20px 0 !important;
+		padding: 15px 0px 2px 5px !important;
 	}
-	.content {
-		margin-bottom: 40px;
+	.wrapper .activity-tabs__nav {
+		padding: 10px 15px;
 
-		.waves-effect {
-			visibility: hidden;
+		li {
+			padding: 5px 0 !important;
+			width: 48%;
+
+			&:after {
+				display: none;
+			}
 		}
-		.image-block {
-			margin-bottom: 350px;
+	}
+	.wrapper .activity-tabs__title:after {
+		display: none;
+	}
+	.wrapper .activity-tabs__title {
+		width: 100%;
+		float: none;
+	}
+	.wrapper {
+		.content {
+			margin-bottom: 20px;
 
-			.avatar {
-				border: 1px solid #999;
-				background-image: url("https://pp.vk.me/c618521/v618521279/162a0/ELvV1wKJ7zM.jpg");
-				background-position: 200px 1px;
-				background-size: 190%;
-				width: 150px;
-				height: 150px;
-				border-radius: 50%;
-				position: relative;
-				top: 210px;
-				left: 30px;
+			.waves-effect {
+				visibility: hidden;
 			}
-			.text-content {
-				position: relative;
-				top: 100px;
-				left: 200px;
-				color: #ffffff;
-			}
-			.carousel {
-			}
-			.right-top-image {
-			}
-			.right-bottom-image {
-				min-height: 200px;
-			}
-			.carousel-control {
-				width: 8%;
-			}
-			.carousel-inner {
-				.item {
-					img {
-						width: 100%;
-						margin: auto;
+			.image-block {
+				.left-image {
+					min-height: 270px;
+
+					.avatar {
+						display: none;
+						bottom: auto;
+						top: 30px;
+						left: 30px;
+						position: absolute;
 					}
-					a {
-						img {
-							width: 100%;
-							margin: auto;
+					.text-content {
+						position: absolute;
+						bottom: 20px;
+						left: 20px;
+						color: #ffffff;
+					}
+				}
+				.carousel {
+				}
+				.right-image {
+					.carousel-control {
+						width: 8%;
+					}
+					.carousel-inner {
+						.item {
+							.text-content {
+								bottom: 5px;
+								left: 10px;
+							}
+							img {
+								width: 100%;
+								margin: auto;
+							}
+							a {
+								img {
+									width: 100%;
+									margin: auto;
+								}
+							}
 						}
+					}
+					.carousel {
+						max-height: 215px;
+						overflow: hidden;
+					}
+					.right-top-image {
+						max-height: 215px;
+						overflow: hidden;
+						position: relative;
+						z-index: 0;
+					}
+					.right-bottom-image {
+						min-height: 215px;
 					}
 				}
 			}
