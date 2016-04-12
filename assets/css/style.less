@@ -33,11 +33,11 @@ a {
 	position: sticky;
 }
 .sticky.sticky-fixed.is-sticky {
-	position: relative;
+	position: fixed;
 	backface-visibility: hidden;
 }
 .sticky.sticky-fixed.is-absolute {
-	position: relative;
+	position: absolute;
 	backface-visibility: hidden;
 }
 .sticky.sidebar {
@@ -51,7 +51,7 @@ a {
 }
 .sticky-wrap {
 }
-.sidebar {
+.sidebar.sticky.sticky-fixed.is-stick, .sticky.sticky-fixed.is-absolute {
 }
 
 /**/
@@ -437,6 +437,7 @@ a {
 					line-height: 1.5;
 					font-weight: 500;
 					margin-bottom: 5px;
+					margin-top: 0;
 				}
 				&__descr {
 					font-size: 12px;
@@ -653,6 +654,12 @@ a {
 				line-height: 22px;
 			}
 		}
+	}
+	.sticky {
+		position: static !important;
+	}
+	.sticky-wrap {
+		height: auto !important;
 	}
 	.wrapper .content .col-lg-6 {
 		margin-top: 10px;
