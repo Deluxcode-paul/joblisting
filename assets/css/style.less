@@ -84,15 +84,18 @@ a {
 				margin-top: 21px;
 
 				a {
+					font-size: 15px;
+					text-transform: none;
+					font-weight: bold;
+					font-family: Calibri;
 					color: #000;
 					padding-top: 7px;
 					padding-bottom: 8px;
-					font-weight: 500;
 				}
 				.login-button {
 					border-radius: 3px;
 					padding: 8px 10px;
-					font-weight: 500;
+					font-weight: bold;
 					margin: 0 4px;
 					background-color: #00A6E0;
 					color: #ffffff;
@@ -125,7 +128,15 @@ a {
 		.image-block {
 			margin-bottom: 15px;
 
-			.col-lg-6 {
+			.col-lg-8 {
+				width: 70.2%;
+				overflow: hidden;
+			}
+			.col-lg-4 {
+				width: 29.8%;
+				overflow: hidden;
+			}
+			.col-lg-8, .col-lg-4 {
 				padding-left: 0;
 				padding-right: 0;
 			}
@@ -188,13 +199,15 @@ a {
 					max-height: 200px;
 				}
 				.carousel-control {
-					width: 8%;
+					width: 12%;
 					z-index: 1;
 
 					.icon-left-open:before {
 						content: '\e804';
+						margin: 0;
 					}
 					.icon-right-open:before {
+						margin: 0;
 						content: '\e805';
 					}
 				}
@@ -225,12 +238,16 @@ a {
 							}
 						}
 						img {
-							width: 100%;
+							width: auto;
+							max-width: none;
+							max-height: 200px;
 							margin: auto;
 						}
 						a {
 							img {
-								width: 100%;
+								width: auto;
+								max-width: none;
+								max-height: 200px;
 								margin: auto;
 							}
 						}
@@ -695,6 +712,18 @@ a {
 				visibility: hidden;
 			}
 			.image-block {
+				.col-lg-8 {
+					width: 100%;
+					overflow: auto;
+				}
+				.col-lg-4 {
+					width: 100%;
+					overflow: auto;
+				}
+				.col-lg-8, .col-lg-4 {
+					padding-left: 0;
+					padding-right: 0;
+				}
 				.left-image {
 					min-height: 270px;
 
