@@ -27,6 +27,14 @@ a {
 .container {
 	max-width: 1040px;
 }
+.btn, .btn, .input-group-btn .btn {
+	width: 72px;
+	height: 32px;
+	padding: 7px 8px;
+}
+.input-group .input-group-btn {
+	padding: 0;
+}
 
 /* sticky-state */
 .sticky {
@@ -94,11 +102,19 @@ a {
 				}
 				.login-button {
 					border-radius: 3px;
-					padding: 8px 10px;
+					height: 32px;
+					padding: 7px 8px;
+					width: 72px;
 					font-weight: bold;
 					margin: 0 4px;
 					background-color: #00A6E0;
 					color: #ffffff;
+
+					i {
+						&:before {
+							margin: 0;
+						}
+					}
 				}
 				a:hover {
 					background-color: transparent !important;
@@ -116,12 +132,10 @@ a {
 		margin-bottom: 60px;
 
 		#left {
-			height: 3000px;
 			position: relative;
 			background-color: #ffffff;
 		}
 		#right {
-			height: 3000px;
 			position: relative;
 			background-color: #ffffff;
 		}
@@ -256,6 +270,7 @@ a {
 			}
 		}
 		.sidebar {
+			max-width: 230px;
 			width: 100%;
 			padding: 15px 0;
 
@@ -398,13 +413,13 @@ a {
 					clear: both;
 				}
 				&__align-left {
-					width: 80px;
+					width: 70px;
 					min-height: 140px;
 					float: left;
 
 					img {
-						width: 70px;
-						height: 70px;
+						width: 65px;
+						height: 65px;
 					}
 				}
 				&__align-right {
@@ -420,7 +435,6 @@ a {
 				}
 			}
 			&__bar-label {
-				text-transform: uppercase;
 				color: #000;
 				font-size: 14px;
 				border-bottom: 2px solid #e93100;
@@ -672,9 +686,16 @@ a {
 			}
 		}
 	}
+	#right, #left {
+		height: auto !important;
+	}
 	.sticky {
 		position: static !important;
 		width: 100% !important;
+	}
+	.sidebar {
+		width: 100% !important;
+		max-width: none !important;
 	}
 	.sticky-wrap {
 		height: auto !important;
