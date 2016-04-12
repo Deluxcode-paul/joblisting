@@ -15,15 +15,14 @@ $(window).on('load resize', function() {
         $('#left').css('height', 'auto');
         $('#right').css('height', 'auto');
     }
+    var stickyOptions = {
+        disabled: false,
+        className: 'sticky',
+        stateClassName: 'is-sticky',
+        fixedClass: 'sticky-fixed',
+        wrapperClass: 'sticky-wrap',
+        absoluteClass: 'is-absolute'
+    };
+
+    StickyState.apply(document.querySelectorAll('.sticky'), stickyOptions);
 });
-
-var stickyOptions = {
-    disabled: false,
-    className: 'sticky',
-    stateClassName: 'is-sticky',
-    fixedClass: 'sticky-fixed',
-    wrapperClass: 'sticky-wrap',
-    absoluteClass: 'is-absolute'
-};
-
-StickyState.apply(document.querySelectorAll('.sticky'), stickyOptions);
